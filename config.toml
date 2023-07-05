@@ -1,0 +1,129 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+theme = "anubis"
+paginate = 3
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[author]
+name = "SFU"
+
+[params]
+author = "SFU"
+description = "Anubis is a simple minimalist theme for Hugo blog engine."
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+style = "auto"
+readMore = false
+readNextPosts = 2
+copyCodeButton = true
+rssAsSocialIcon = false
+locale = "en-us"
+mathjax = false
+
+# Graphcomment support
+graphcommentId = ""
+
+# utteranc.es support
+utterancesRepo = ""  # mandatory
+utterancesTheme = "" # optional
+utterancesIssue = "" # optional
+utterancesLabel = "" # optional
+
+[[params.social]]
+id = "docs"
+url = "https://docs.alliancecan.ca/wiki/Technical_documentation"
+
+# [[params.social]]
+# id = "github"
+# url = "https://github.com/mitrichius/hugo-theme-anubis"
+
+[languages.en]
+languageName = "English"
+title = "Visualize This!"
+[[menu.main]]
+identifier = "data"
+name = "Data"
+url = "/data/"
+weight = 1
+[[menu.main]]
+identifier = "tasks"
+name = "Tasks"
+url = "/tasks/"
+weight = 2
+[[menu.main]]
+identifier = "submission"
+name = "Submission"
+url = "/submission/"
+weight = 3
+[[menu.main]]
+identifier = "results"
+name = "Results"
+url = "/results/"
+weight = 4
+[[menu.main]]
+identifier = "contact"
+name = "📬"
+url = "/contact/"
+weight = 5
+# [[menu.main]]
+# identifier = "tags"
+# name = "Tags"
+# url = "/tags/"
+# weight = 2
+# [[menu.main]]
+# name = "Archive"
+# identifier = "archive"
+# url = "/posts/"
+# weight = 3
+
+[languages.fr]
+languageName = "French"
+title = "Faites-nous voir ça!"
+[[languages.fr.menu.main]]
+identifier = "data"
+name = "Données"
+url = "/data/"
+weight = 1
+[[languages.fr.menu.main]]
+identifier = "tasks"
+name = "Tâches"
+url = "/tasks/"
+weight = 2
+[[languages.fr.menu.main]]
+identifier = "submission"
+name = "Soumission"
+url = "/submission/"
+weight = 3
+[[languages.fr.menu.main]]
+identifier = "results"
+name = "Résultats"
+url = "/results/"
+weight = 4
+[[languages.fr.menu.main]]
+identifier = "contact"
+name = "📬"
+url = "/contact/"
+weight = 5
+# [[languages.fr.menu.main]]
+# identifier = "tags"
+# name = "Tagi"
+# url = "/tags/"
+# weight = 2
+# [[languages.fr.menu.main]]
+# identifier = "archive"
+# name = "Archiwum"
+# url = "/posts/"
+# weight = 3
+[[languages.fr.params]]
+locale = "fr_CA"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"
+
+[markup.goldmark.renderer]
+unsafe = true
