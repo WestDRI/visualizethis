@@ -2,7 +2,7 @@ baseURL = "https://visualizethis.netlify.app/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "anubis"
-title = "Visualize This!"
+# title = "Visualize This!"
 paginate = 3
 
 # disqusShortname = ""
@@ -43,7 +43,7 @@ url = "https://docs.alliancecan.ca/wiki/Technical_documentation"
 
 [languages.en]
 languageName = "English"
-#title = "Visualize This!"
+title = "Visualize This!"
 [[menu.main]]
 identifier = "data"
 name = "Data"
@@ -82,7 +82,7 @@ weight = 5
 
 [languages.fr]
 languageName = "French"
-#title = "Faites-nous voir ça!"
+title = "Faites-nous voir ça!"
 [[languages.fr.menu.main]]
 identifier = "data"
 name = "Données"
