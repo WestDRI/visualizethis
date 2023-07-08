@@ -85,27 +85,27 @@ title = "Faites-nous voir ça!"
 [[languages.fr.menu.main]]
 identifier = "data"
 name = "Données"
-url = "/data/"
+url = "../data/"
 weight = 1
 [[languages.fr.menu.main]]
 identifier = "tasks"
 name = "Tâches"
-url = "/tasks/"
+url = "../tasks/"
 weight = 2
 [[languages.fr.menu.main]]
 identifier = "submission"
 name = "Soumission"
-url = "/submission/"
+url = "../submission/"
 weight = 3
 [[languages.fr.menu.main]]
 identifier = "results"
 name = "Résultats"
-url = "/results/"
+url = "../results/"
 weight = 4
 [[languages.fr.menu.main]]
 identifier = "contact"
 name = "📬"
-url = "/contact/"
+url = "../contact/"
 weight = 5
 # [[languages.fr.menu.main]]
 # identifier = "tags"
