@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://visualizethis.netlify.app/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 theme = "anubis"
