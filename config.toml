@@ -35,7 +35,7 @@ utterancesLabel = "" # optional
 
 [[params.social]]
 id = "docs"
-url = "https://docs.alliancecan.ca/wiki/Technical_documentation"
+url = "https://docs.alliancecan.ca/wiki/Visualization"
 
 # [[params.social]]
 # id = "github"
