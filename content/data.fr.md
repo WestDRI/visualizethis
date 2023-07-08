@@ -1,6 +1,5 @@
 ---
 title: "Données"
-slug: "../fr/data"
 # description: "Hugo, the world’s fastest framework for building websites"
 # date: "2023-06-30"
 aliases: ["about-us","about-hugo","contact"]
