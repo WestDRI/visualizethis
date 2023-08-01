@@ -4,6 +4,7 @@ description: "Hugo, the world’s fastest framework for building websites"
 # date: "2023-06-30"
 aliases: ["about-us","about-hugo","contact"]
 author: "SFU"
+math: true
 # menu:
 #   subpage:
 #     identifier: about-subpage
@@ -21,13 +22,62 @@ author: "SFU"
 #     weight: 10
 ---
 
-*Depending on which dataset you work on, please read the corresponding section below.*
+*Depending on which dataset you work on, please read one of the two sections below.*
 
 <br>
 
 # Halloween storm over Eastern Canada
 
-Description.
+<!-- ➽ grid numerical resolution, axes -->
+
+<!-- time, pres, rlat, rlon -->
+
+<!--         time = UNLIMITED ; // (24 currently) -->
+<!--         pres = 16 ; -->
+
+
+
+
+3D volumetric data are provided on a spherical mesh at resolution $1060\times 1330$ (horizontal) at 16
+vertical pressure levels. For visualization purposes, the pressure levels can be treated as elevation. All
+variables are stored in compressed NetCDF files.
+
+The storm atmospheric data are described with the following 3D time-dependent variables:
+
+1. the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) ,
+2. the mass mixing ratio of rain MPQR(time,pres,rlat,rlon), and
+3. the mass mixing ratio of ice QTI1(time,pres,rlat,rlon).
+
+inside the three files `dp2015090100_2019{1031,1101,1102}d.nc`, for October 31<sup>st</sup>, November
+1<sup>st</sup>, and November 2<sup>nd</sup>, respectively. Each NetCDF file contains 24 hourly steps.
+
+There are also 2D (surface-level) time-dependent variables:
+
+4. the amount of snow (in water equivalent mm) I5(time,rlat,rlon) inside
+   `pm2015090100_2019{1031,1101,1102}d.nc`, and
+5. the mean sea level pressure PN(time,rlat,rlon) inside `dm2015090100_2019{1031,1101,1102}d.nc`.
+
+Finally, the topography is described by the following 2D static (no time dependency) variables:
+
+1. land-sea mask MG(rlat,rlon) inside `pm2015090100_00000000p.nc`,
+2. elevation ME(rlat,rlon) (in meters) inside `dm2015090100_00000000p.nc`,
+
+➽ You can combine these two variables into a single variable `elevation = MG*ME` in a file `topo.pvd` on a
+Cartesian mesh.
+
+
+
+
+
+<!-- for f in contestData/*; do -->
+<!--     ln -s $f ${f/contestData\//} -->
+<!-- done -->
+
+
+
+
+
+
 
 ### Downloading the data
 
