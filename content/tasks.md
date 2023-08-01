@@ -12,6 +12,13 @@ author: "SFU"
 
 # Halloween storm over Eastern Canada
 
+Show time-dependent distributions of clouds, rain and ice particles in the atmosphere over the three days,
+both relative to topography and to each other. Show how these distributions affect the land snow cover and the
+sea surface pressure.
+
+
+
+
 <br>
 
 # Normalized difference vegetation index

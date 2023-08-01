@@ -26,44 +26,44 @@ math: true
 
 <br>
 
-# Halloween storm over Eastern Canada
-
-<!-- ➽ grid numerical resolution, axes -->
+# Dataset 1: Halloween storm over Eastern Canada
 
 <!-- time, pres, rlat, rlon -->
-
 <!--         time = UNLIMITED ; // (24 currently) -->
 <!--         pres = 16 ; -->
 
+We provide simulation data for three days from October 31<sup>st</sup> to November 2<sup>nd</sup>, covering
+the storm and some of its aftereffects. The 3D volumetric data was prepared on a spherical mesh at resolution
+$1060\times 1330$ (horizontal) at 16 vertical pressure levels. For visualization purposes, the pressure levels
+can be treated as elevation. All variables are stored in compressed NetCDF files.
 
-
-
-3D volumetric data are provided on a spherical mesh at resolution $1060\times 1330$ (horizontal) at 16
-vertical pressure levels. For visualization purposes, the pressure levels can be treated as elevation. All
-variables are stored in compressed NetCDF files.
-
-The storm atmospheric data are described with the following 3D time-dependent variables:
+The storm atmospheric data are presented with the following 3D time-dependent variables:
 
 1. the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) ,
 2. the mass mixing ratio of rain MPQR(time,pres,rlat,rlon), and
 3. the mass mixing ratio of ice QTI1(time,pres,rlat,rlon).
 
-inside the three files `dp2015090100_2019{1031,1101,1102}d.nc`, for October 31<sup>st</sup>, November
+inside three files `dp2015090100_2019{1031,1101,1102}d.nc`, for October 31<sup>st</sup>, November
 1<sup>st</sup>, and November 2<sup>nd</sup>, respectively. Each NetCDF file contains 24 hourly steps.
 
 There are also 2D (surface-level) time-dependent variables:
 
-4. the amount of snow (in water equivalent mm) I5(time,rlat,rlon) inside
+4. the amount of snow (in water equivalent mm) on the ground I5(time,rlat,rlon) inside
    `pm2015090100_2019{1031,1101,1102}d.nc`, and
 5. the mean sea level pressure PN(time,rlat,rlon) inside `dm2015090100_2019{1031,1101,1102}d.nc`.
 
 Finally, the topography is described by the following 2D static (no time dependency) variables:
 
-1. land-sea mask MG(rlat,rlon) inside `pm2015090100_00000000p.nc`,
-2. elevation ME(rlat,rlon) (in meters) inside `dm2015090100_00000000p.nc`,
+6. land-sea mask MG(rlat,rlon) inside `pm2015090100_00000000p.nc`,
+7. elevation ME(rlat,rlon) (in meters) inside `dm2015090100_00000000p.nc`.
 
-➽ You can combine these two variables into a single variable `elevation = MG*ME` in a file `topo.pvd` on a
-Cartesian mesh.
+You can combine the last two variables into a single variable `elevation = MG*ME` with the Calculator filter
+in ParaView.
+
+<!-- in a file `topo.pvd` on a Cartesian mesh -->
+
+
+
 
 
 
@@ -81,27 +81,118 @@ Cartesian mesh.
 
 ### Downloading the data
 
+Data will be published here in mid-September.
+
+<!-- for f in *.nc; do -->
+<!--     echo $(echo $f; ls -l $f | awk '{print $5}'; md5 $f | awk '{print $4}') -->
+<!-- done -->
+
+<!-- | File   |  Size      |  MD5 checksum | -->
+<!-- |--------|------------|---------------| -->
+<!-- | dm2015090100_00000000p.nc | 5.1M | 5a4b0af90fc3129ca6dba95942061dae | -->
+<!-- | dm2015090100_20191031d.nc | 46M  | 2b202060bba4d8e3005bd2a95923202b | -->
+<!-- | dm2015090100_20191101d.nc | 44M  | d17dd34b2d3db207aaace49ac97a8e34 | -->
+<!-- | dm2015090100_20191102d.nc | 43M  | 69c6f8fa8afb1d626b098336729dbfb9 | -->
+<!-- | dp2015090100_20191031d.nc | 396M | 2fd61a2cba4a1638731871ab844e8e4c | -->
+<!-- | dp2015090100_20191101d.nc | 330M | d94f015edffd59bf985df223847aab98 | -->
+<!-- | dp2015090100_20191102d.nc | 246M | a7eb5e8b268002fb8708b00e69f65e7b | -->
+<!-- | pm2015090100_00000000p.nc | 4.1M | fbc4b1e1f987b7392b14a50767489fcc | -->
+<!-- | pm2015090100_20191031d.nc | 23M  | 61b20877923943beedb84d2083d29b34 | -->
+<!-- | pm2015090100_20191101d.nc | 27M  | 1ece29fade591f65a9aea4cb22c3c5fe | -->
+<!-- | pm2015090100_20191102d.nc | 28M  | ca9dee21c598a76275357f4faa7ca1b1 | -->
+
 ### Loading the data in ParaView
+
+ParaView can read NetCDF files natively. Pay attention to the Dimension drop-down menu to navigate to the
+right subset of input variables.
+
+Since all variables are on a spherical mesh, you might want to use a non-default vertical scale and bias when
+loading data. Alternatively, you can project any spherical variable to a Cartesian mesh using the Programmable
+filter with Output Type = vtkImageData, e.g.
+
+```py
+ext = inputs[0].GetExtent()
+var = inputs[0].PointData["inputName"]
+
+output.SetOrigin(0., 0., 0.)
+output.SetSpacing(1., 1., 1.)
+output.SetDimensions(ext[1]-ext[0]+1, ext[3]-ext[2]+1, ext[5]-ext[4]+1)
+output.SetExtent(ext)
+output.AllocateScalars(vtk.VTK_FLOAT, 1)
+
+vtk_data_array = vtk.util.numpy_support.numpy_to_vtk(var, deep=True, array_type=vtk.VTK_FLOAT)
+vtk_data_array.SetNumberOfComponents(1)
+vtk_data_array.SetName("outputName")
+output.GetPointData().SetScalars(vtk_data_array)
+```
 
 ### Loading the data in Python
 
+In Python you can read data into an xarray.Dataset containing multiple variables, each stored as a NumPy
+array:
+
+```py
+import xarray as xr
+data = xr.open_dataset("~/tmp/alejandroData/contestData/dp2015090100_20191031d.nc")
+print(data)               # show all variables inside this dataset
+print(data.MPQC.shape)    # this is a 24x16x1060x1330 numpy array
+print(data.MPQC.values)   # access the values
+print(data.time)          # time steps
+print(data.lon.values)    # 2D array of longitudes
+print(data.lat.values)    # 2D array of latitudes
+```
+
+Alternatively, you can use the traditional netCDF4 Python interface:
+
+```py
+import netCDF4 as nc
+all = nc.Dataset("/Users/razoumov/tmp/alejandroData/contestData/dp2015090100_20191031d.nc", "r")
+print(all)                            # show all variables inside this dataset
+print(all.variables['MPQR'][:,:,:])   # this is a 24x16x1060x1330 numpy array
+print(all.variables['time'][:])       # time steps
+print(all.variables['lon'][:,:])      # 2D array of longitudes
+```
+
 ### References
+
+<!-- 1. M. H. Shahnas, W. R. Peltier, Z. Wu, R. Wentzcovitch (2011): [The high pressure electronic spin transition in iron: potential impacts upon mantle mixing](http://dx.doi.org/10.1029/2010JB007965). J. Geophys. Res. **116**, B08205 -->
+<!-- 1. M. H. Shahnas, R. N. Pysklywec, and D. A. Yuen (2016): [Spawning superplumes from the midmantle: The impact of spin transitions in the mantle](https://doi.org/10.1002/2016GC006509). Geochemistry, Geophysics, Geosystems **17**, 4051-4063 -->
+<!-- 1. M. H. Shahnas, D. A. Yuen, R.N. Pysklywec (2017): [Mid-mantle heterogeneities and iron spin transition in the lower mantle: Implications for mid-mantle slab stagnation](http://dx.doi.org/10.1016/j.epsl.2016.10.052). Earth and Planetary Science Letters **458**, 293–304 -->
+<!-- 1. [Researcher's page](http://www.atmosp.physics.utoronto.ca/~shahnas/htmls/Research.htm) at the University of Toronto -->
 
 ### Acknowledgments
 
+Data courtesy of {{<a "https://alejandro-diluca.uqam.ca" "Alejandro Di Luca">}} from Université du Québec à
+Montréal. The simulation was conducted using the Alliance's Narval cluster.
+
+
+
+
+
+
+
+
+
 <br>
 
-# Normalized difference vegetation index
+# Dataset 2: normalized difference vegetation index (NDVI)
 
-Description.
+Description will be added shortly.
 
 ### Downloading the data
+
+Data will be published here in mid-September.
 
 ### Loading the data in ParaView
 
 ### Loading the data in Python
 
 ### References
+
+<!-- 1. M. H. Shahnas, W. R. Peltier, Z. Wu, R. Wentzcovitch (2011): [The high pressure electronic spin transition in iron: potential impacts upon mantle mixing](http://dx.doi.org/10.1029/2010JB007965). J. Geophys. Res. **116**, B08205 -->
+<!-- 1. M. H. Shahnas, R. N. Pysklywec, and D. A. Yuen (2016): [Spawning superplumes from the midmantle: The impact of spin transitions in the mantle](https://doi.org/10.1002/2016GC006509). Geochemistry, Geophysics, Geosystems **17**, 4051-4063 -->
+<!-- 1. M. H. Shahnas, D. A. Yuen, R.N. Pysklywec (2017): [Mid-mantle heterogeneities and iron spin transition in the lower mantle: Implications for mid-mantle slab stagnation](http://dx.doi.org/10.1016/j.epsl.2016.10.052). Earth and Planetary Science Letters **458**, 293–304 -->
+<!-- 1. [Researcher's page](http://www.atmosp.physics.utoronto.ca/~shahnas/htmls/Research.htm) at the University of Toronto -->
 
 ### Acknowledgments
 

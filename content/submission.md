@@ -9,11 +9,16 @@ author: "SFU"
 
 # Dates
 
+- 2023-Sep-15 -- contest announcement, datasets published
+- 2023-Nov-30, midnight Pacific Time -- submission deadline
+- 2023-Dec-15 -- announcement of results
+
 # How to submit
 
 # Prizes
 
-As the whole competition runs online, we decided not to give away prizes this year.
+As the whole competition runs online, there will be no physical prizes this year. We will send certificates to
+the top three submissions.
 
 # Judges
 

@@ -14,6 +14,7 @@ Jarno van der Kolk (University of Ottawa) and Angus Creech (Memorial University)
 
 The Contest website is https://visualizethis.netlify.app
 
-All communication will be via a Google group (will be set up shortly). <!--
-https://groups.google.com/forum/#!forum/sciviscontest2021 -->. To be able to post and read messages, please
-email the main contact (AR) at the address above to be added to the group.
+All communication will be via a Google group (will be set up shortly).
+<!-- https://groups.google.com/forum/#!forum/sciviscontest2021 -->
+To be able to post and read messages, please email the main contact (AR) at the address above to be added to
+the group.
