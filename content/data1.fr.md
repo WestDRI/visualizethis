@@ -1,7 +1,7 @@
 ---
 title: "Tempête d'Halloween sur l'est du Canada"
 description: "Ensemble de données de tempête"
-date: "2019-02-28"
+# date: "2019-02-28"
 author: "SFU"
 slug: /data/storm
 <!-- menu: -->
@@ -20,3 +20,17 @@ slug: /data/storm
 <!--     url: /data/subpage2/ -->
 <!--     weight: 10 -->
 ---
+
+Description.
+
+### Téléchargement des données
+
+Les données seront publiées ici à la mi-septembre.
+
+### Chargement des données dans ParaView
+
+### Charger les données en Python
+
+### Les références
+
+### Remerciements

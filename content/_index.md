@@ -2,16 +2,10 @@
 author = "SFU"
 +++
 
-<font size="5">2023 *Visualize This* Contest: two datasets</font>
+<font size="+3">2023 *Visualize This* Contest: two datasets</font>
 
-<!-- *The 2021 IEEE SciVis Contest is dedicated to creating novel approaches and state-of-the-art visualizations to assist -->
-<!-- domain scientists to better understand the convection processes in the Earth's mantle. Contest participants will be -->
-<!-- invited to present at the special SciVis Contest session at IEEE Vis 2021 on October 23 - 28, 2021, and the winning -->
-<!-- team will be invited to submit a full journal article (with an expedited review process) to IEEE Computer Graphics and -->
-<!-- Applications (CG&A) Journal. The contest is sponsored by [IEEE Vis](http://ieeevis.org) and -->
-<!-- [Compute Canada](https://www.computecanada.ca).* -->
-
-
+<!-- <font size="+0"> -->
+<!-- </font> -->
 
 Now in its 6th year, *Visualize This!* is a Canada-wide competition that aims to celebrate the innovative ways
 visualization can help researchers explore datasets and answer important scientific questions. *Visualize
@@ -56,13 +50,13 @@ at Okanagan). They compiled approximately 20 years of openly-available remotely 
 scale. NDVI (normalized difference vegetation index) is a measure of greenness, widely used to measure the
 ecosystem productivity.
 
-# Terms
+# Contest terms
 
 Please only use open-source tools and libraries in the Contest, so that anyone can reproduce your solution
 without having to pay for commercial / proprietary tools. Two commonly used 3D visualization tools are {{<a
 "https://www.paraview.org" "ParaView">}} and {{<a "https://visit-dav.github.io/visit-website" "VisIt">}}, but
 you are free to use any open-source package or library or any programming language -- there are many tools
-readily available for visualizing these data. What one can do with these tools is really limited only by their
+readily available for visualizing these data. What you can do with these tools is really limited only by your
 imagination.
 
 Your submission in the Contest (both images/movies and the workflow) will be published under a <a

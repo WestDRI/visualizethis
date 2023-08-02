@@ -20,3 +20,17 @@ slug: /data/ndvi
 <!--     url: /data/subpage2/ -->
 <!--     weight: 10 -->
 ---
+
+La description sera ajoutée sous peu.
+
+### Téléchargement des données
+
+Les données seront publiées ici à la mi-septembre.
+
+### Chargement des données dans ParaView
+
+### Charger les données en Python
+
+### Les références
+
+### Remerciements

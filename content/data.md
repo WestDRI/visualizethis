@@ -2,20 +2,20 @@
 title: "Data"
 # description: ""
 # date: "2023-06-30"
-aliases: ["about-us","about-hugo","contact"]
+aliases: ["data"]
 author: "SFU"
 math: true
 menu:
   subpage:
-    identifier: about-subpage
-    parent: about
+    identifier: storm
+    parent: data
     name: Storm dataset
     title: Storm dataset
     url: /data/storm/
     weight: 1
   subpage2:
-    identifier: about-subpage2
-    parent: about
+    identifier: ndvi
+    parent: data
     name: NDVI dataset
     title: NDVI dataset
     url: /data/ndvi/

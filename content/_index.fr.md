@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="5">2023 Concours *Faites-nous voir ça*: deux ensembles de données</font>
+<font size="+3">2023 Concours *Faites-nous voir ça*: deux ensembles de données</font>
 
 <!-- *Le concours IEEE SciVis 2021 est dédié à la création de nouvelles approches et de visualisations de pointe -->
 <!-- pour aider scientifiques du domaine pour mieux comprendre les processus de convection dans le manteau -->
@@ -15,7 +15,7 @@ author = "SFU"
 
 <!-- <br> -->
 
-# Tempête d'Halloween sur l'est du Canada
+# Ensemble de données 1: tempête d'Halloween sur l'est du Canada
 
 Le premier ensemble de données, fourni par le groupe de recherche de {{<a "https://alejandro-diluca.uqam.ca"
 "Alejandro Di Luca">}} (Université du Québec à Montréal), est issu d'une simulation numérique d'une tempête
@@ -34,10 +34,12 @@ cyan) et cristaux de glace (jaune) sur 6 jours à partir de la tempête du 31 oc
 Le principal défi de cet ensemble de données est de montrer les distributions qui se chevauchent de plusieurs variables 3D, idéalement
 (mais pas nécessairement!) dans la même visualisation.
 
-# L'indice de végétation par différence normalisée
+# Ensemble de données 2: indice de végétation par différence normalisée (IVDN)
 
 Le deuxième ensemble de données, fourni par le groupe de recherche de {{<a
 "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} (UBC Okanagan), compile environ
 20 ans de données de télédétection NDVI (indice de végétation par différence normalisée) librement disponibles
 à l'échelle mondiale. Le NDVI est une mesure de la verdure, régulièrement utilisée pour mesurer la
 productivité de l'écosystème.
+
+# Conditions du concours

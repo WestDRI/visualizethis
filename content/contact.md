@@ -1,7 +1,7 @@
 ---
 title: "Contact"
-#description: "Hugo, the world’s fastest framework for building websites"
-#date: "2023-06-30"
+# description: ""
+# date: "2023-06-30"
 aliases: ["about-us","contact"]
 author: "SFU"
 ---

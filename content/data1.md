@@ -1,7 +1,7 @@
 ---
 title: "Halloween storm over Eastern Canada"
 description: "Storm dataset"
-date: "2019-02-28"
+# date: "2019-02-28"
 author: "SFU"
 slug: /data/storm
 <!-- menu: -->
@@ -36,7 +36,7 @@ The storm atmospheric data are presented with the following three 3D time-depend
 2. the mass mixing ratio of rain MPQR(time,pres,rlat,rlon), and
 3. the mass mixing ratio of ice QTI1(time,pres,rlat,rlon)
 
-inside three files `dp2015090100_2019{1031,1101,1102}d.nc`, for Oct-31, Nov-01, and Nov-02, respectively. Each
+inside three files `dp2015090100_2019{1031,1101,1102}d.nc` for Oct-31, Nov-01, and Nov-02, respectively. Each
 NetCDF file contains 24 hourly steps.
 
 The effect of the storm at the surface is described by two 2D time-dependent variables:
@@ -45,7 +45,7 @@ The effect of the storm at the surface is described by two 2D time-dependent var
    `pm2015090100_2019{1031,1101,1102}d.nc`, and
 5. the mean sea level pressure PN(time,rlat,rlon) inside `dm2015090100_2019{1031,1101,1102}d.nc`.
 
-Finally, the topography is marked by the following 2D static (no time dependency) variables:
+Finally, the topography is provided by the following 2D static (no time dependency) variables:
 
 6. land-sea mask MG(rlat,rlon) inside `pm2015090100_00000000p.nc`,
 7. elevation ME(rlat,rlon) (in meters) inside `dm2015090100_00000000p.nc`.
@@ -114,9 +114,9 @@ Data will be published here in mid-September.
 ParaView can read NetCDF files natively. Pay attention to the Dimension drop-down menu to navigate to the
 right subset of input variables.
 
-Since all variables are on a spherical mesh, you might want to use a non-default vertical scale and bias when
-loading data. Alternatively, you can project any spherical variable to a Cartesian mesh using the Programmable
-Filter with Output Type = vtkImageData, e.g.
+Since all variables are on a spherical mesh, you might want to use non-default *vertical scale* and *vertical
+bias* when loading data. Alternatively, you can project any spherical variable to a Cartesian mesh using the
+Programmable Filter with Output Type = vtkImageData, e.g.
 
 ```py
 ext = inputs[0].GetExtent()
