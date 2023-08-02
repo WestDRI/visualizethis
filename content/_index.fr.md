@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="5"> 2023 Concours *Faites-nous voir ça!*: Convection du manteau terrestre </font>
+<font size="5">2023 Concours *Faites-nous voir ça*: deux ensembles de données</font>
 
 <!-- *Le concours IEEE SciVis 2021 est dédié à la création de nouvelles approches et de visualisations de pointe -->
 <!-- pour aider scientifiques du domaine pour mieux comprendre les processus de convection dans le manteau -->

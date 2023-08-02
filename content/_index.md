@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="5"> 2023 *Visualize This!* Contest: two datasets </font>
+<font size="5">2023 *Visualize This* Contest: two datasets</font>
 
 <!-- *The 2021 IEEE SciVis Contest is dedicated to creating novel approaches and state-of-the-art visualizations to assist -->
 <!-- domain scientists to better understand the convection processes in the Earth's mantle. Contest participants will be -->
