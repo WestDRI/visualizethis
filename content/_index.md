@@ -12,17 +12,18 @@ visualization can help researchers explore datasets and answer important scienti
 This!* is your chance to challenge your creativity, experiment with new visualization tools, and contribute to
 the growth of data visualization in Canada!
 
-This year's *Visualize This!* Contest is hosted by the Digital Research Alliance of Canada and its regional
-partners. Together with the Alliance's National Visualization Team, we want to bring your creative
-visualization ideas and workflows to life and make them accessible to all Canadian researchers!
+This year's *Visualize This!* Contest is hosted by [the Digital Research Alliance of
+Canada](https://alliancecan.ca) and its regional partners. Together with the Alliance's National Visualization
+Team, we want to bring your creative visualization ideas and workflows to life and make them accessible to all
+Canadian researchers!
 
-<!-- WestGrid, SciNet, SHARCNET, and Calcul Québec -->
+<!-- BC DRI, Prairies DRI, Compute Ontario, Calcul Québec, and ACENET -->
 
-*In this year's Contest you can work on one of the two datasets below.*
+<!-- Other possible colours: #FF4500 #777777 #FC5900 #439596 -- see https://bit.ly/45cOl61 -->
 
-To participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}}
--- this will add you to the "Visualize This 2023" Google group where we will post all updates and
-announcements.
+<font color="#439596"> In this year's Contest you can work on one of the two datasets below. </font> To
+participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}} --
+this will add you to the "Visualize This 2023" Google group where we will post all updates and announcements.
 
 <!-- <br> -->
 

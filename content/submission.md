@@ -6,6 +6,7 @@ aliases: ["about-us","about-hugo","contact"]
 author: "SFU"
 ---
 
+Please read [Contest terms](/#contest-terms) before sending us your work.
 
 # Dates
 
@@ -17,10 +18,10 @@ author: "SFU"
 
 # Prizes
 
-As the whole competition runs online, there will be no physical prizes this year. We will send certificates to
-the top three submissions.
+As the whole competition runs online this year, there will be no physical prizes. We will send certificates to
+the top three submissions, and we will publish top submissions on this website.
 
-# Judges
+<!-- # Judges -->
 
 
 
