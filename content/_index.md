@@ -18,8 +18,11 @@ visualization ideas and workflows to life and make them accessible to all Canadi
 
 <!-- WestGrid, SciNet, SHARCNET, and Calcul Québec -->
 
-*In this year's Contest you can work on one of the two datasets below.* To participate in the challenge,
-please [register your interest](google form).
+*In this year's Contest you can work on one of the two datasets below.*
+
+To participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}}
+-- this will add you to the "Visualize This 2023" Google group where we will post all updates and
+announcements.
 
 <!-- <br> -->
 
@@ -62,3 +65,5 @@ imagination.
 Your submission in the Contest (both images/movies and the workflow) will be published under a <a
 rel="license" href="http://creativecommons.org/licenses/by/4.0">Creative Commons Attribution 4.0
 International License</a>.
+
+<!-- {{<a "link" "text">}} -->
