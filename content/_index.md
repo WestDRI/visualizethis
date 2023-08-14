@@ -7,23 +7,25 @@ author = "SFU"
 <!-- <font size="+0"> -->
 <!-- </font> -->
 
-Now in its 6th year, *Visualize This!* is a Canada-wide competition that aims to celebrate the innovative ways
+Hosted by [the Digital Research Alliance of Canada](https://alliancecan.ca) and its regional partners, and now
+in its 6th year, *Visualize This!* is a Canada-wide competition that aims to celebrate the innovative ways
 visualization can help researchers explore datasets and answer important scientific questions. *Visualize
-This!* is your chance to challenge your creativity, experiment with new visualization tools, and contribute to
-the growth of data visualization in Canada!
+This!* is your chance to challenge your creativity, experiment with cutting-edge visualization tools, and
+contribute to the growth of data visualization in Canada!
 
-This year's *Visualize This!* Contest is hosted by [the Digital Research Alliance of
-Canada](https://alliancecan.ca) and its regional partners. Together with the Alliance's National Visualization
-Team, we want to bring your creative visualization ideas and workflows to life and make them accessible to all
-Canadian researchers!
+<!-- Together with the Alliance's National Visualization Team, we want to bring your creative visualization ideas -->
+<!-- and workflows to life and make them accessible to all Canadian researchers! -->
 
 <!-- BC DRI, Prairies DRI, Compute Ontario, Calcul Québec, and ACENET -->
 
 <!-- Other possible colours: #FF4500 #777777 #FC5900 #439596 -- see https://bit.ly/45cOl61 -->
 
-<font color="#439596"> In this year's Contest you can work on one of the two datasets below. </font> To
-participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}} --
-this will add you to the "Visualize This 2023" Google group where we will post all updates and announcements.
+<font color="#439596"> In this year's Contest you can work on one of the two datasets below. Both datasets
+contain geospatial data, one from a numerical simulation, and the other compiled from several empirical
+sources. </font>
+To participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}}
+-- this will add you to the "Visualize This 2023" Google group where we will post all updates and
+announcements.
 
 <!-- <br> -->
 
@@ -39,20 +41,30 @@ distribution of clouds (white), rain (green to cyan), and ice crystals (yellow) 
 two projections, along the x- and y-axes, to highlight the relative vertical distribution of the three
 variables.
 
+<br>
 {{< yt 3fpc2fFaLP4 63 >}}
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 1:</b> Distribution of clouds (white), rain (green to
-cyan), and ice crystals (yellow) over 6 days starting with the storm on October 31, 2019.</font> </p>
+cyan), and ice crystals (yellow) over 6 days starting with the storm on October 31, 2019. </font> </p>
+<br>
 
-The main challenge in this dataset is to show the overlapping distributions of several 3D variables, ideally
-(but no necessarily!) in the same visualization.
+You can find more about this dataset [here](/data/storm/). The main challenge is to show the overlapping
+distributions of several 3D variables, ideally (but no necessarily!) in the same visualization.
 
 # Dataset 2: normalized difference vegetation index (NDVI)
 
 The second dataset was provided by the research team of {{<a
 "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} (University of British Columbia
-at Okanagan). They compiled approximately 20 years of openly-available remotely sensed NDVI data at the global
-scale. NDVI (normalized difference vegetation index) is a measure of greenness, widely used to measure the
-ecosystem productivity.
+at Okanagan). They compiled approximately one year of openly-available remotely sensed NDVI (normalized
+difference vegetation index) data at the global scale. NDVI is a measure of greenness, widely used to measure
+the ecosystem productivity. To limit the size of the dataset, here we provide data only for BC.
+
+<br>
+{{< yt KbaN46pcuhI 63 >}}
+<p style="line-height: 1.2;"> <font size="3"> <b>Figure 2:</b> NDVI as a function of time for BC. </font> </p>
+<br>
+
+You can find more about this dataset [here](/data/ndvi/). This dataset is simpler than the first one, as it
+contains effectively only 2D data (that you can choose to view in 3D).
 
 # Contest terms
 

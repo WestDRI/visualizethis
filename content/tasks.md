@@ -23,10 +23,32 @@ author: "SFU"
 
 
 
+<!-- A question that would be of particular interest to me (and others, I believe) is how the relationship between -->
+<!-- E(NDVI) and V(NDVI) varies spatially. I know that information is available in the statistical model I fit, but -->
+<!-- it would be interesting to see different ways of representing the relationship. I assumed all visualizations -->
+<!-- would be static images (not videos/gifs), but if dynamic visualizations are allowed then looking at the -->
+<!-- relationship over time would be even more interesting. I think mean and variance of NDVI over lat/long are -->
+<!-- sufficient, but we can include the elevation in case people want to use it. -->
+
+
+
+<!-- Not sure what you mean by "projected". If you referring to projection onto a sphere (if their rendering is 3D) -->
+<!-- or a cartographic projection (if 2D), then we’ll leave it to participants. The goal of the contest is to see -->
+<!-- unusual ideas and approaches, so I’d rather not limit to a specific view. -->
+
+
+Stress on artistic visualization, e.g. a flyover above BC.
 
 
 
 
+
+
+
+
+
+
+<!-- ========================================================================================== -->
 
 <!-- - Visualize eddies in 3D, at a single snapshot, and over time. -->
 <!-- - Visualize transport/advection of temperature and salinity -->
