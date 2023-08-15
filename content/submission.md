@@ -11,6 +11,7 @@ Please read [Contest terms](/#contest-terms) before sending us your work.
 # Dates
 
 - 2023-Sep-15 -- contest announcement, datasets published
+- 2023-Sep-19 -- contest {{<a "https://training.westdri.ca/events/upcoming-training-fall-2023" "webinar">}}
 - 2023-Nov-30, midnight Pacific Time -- submission deadline
 - 2023-Dec-15 -- announcement of results
 
