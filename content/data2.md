@@ -51,14 +51,14 @@ You can find more about the NDVI on
 [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
 
 The Contest dataset contains 5,939,758 points and 53 timesteps. At each point we provide its coordinates
-(longitude, latitude, elevation in km) and two variables: mean NDVI (*mu*) and its variance (*sigma2*). The
+(longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
 points are not connected, i.e. they do not form a smooth surface. The 53 time steps are uniformly spread
 throughout 2022 from Jan-01 (first step) to Dec-31 (last step).
 
-In addition, in the compressed CSV format for each point we provide two horizontal coordinates (*x_alb*,
-*y_alb*) in the Albers projection. We feel that with the VTK format there is no need to provide these, as you
-would load a VTK file into ParaView, where (longitude, latitude, elevation) already give the 3D coordinates
-that you can use directly in 3D space.
+In the compressed CSV format, in addition to regular geographic coordinates, for each point we provide two
+horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK
+format there is no need to provide these, as you would load a VTK file into ParaView, where *longitude*,
+*latitude*, and *elevation* already give the 3D coordinates that you can use directly in 3D space.
 
 
 

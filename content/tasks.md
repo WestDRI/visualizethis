@@ -20,15 +20,15 @@ author: "SFU"
 
 # Normalized difference vegetation index
 
+1. How does the relationship between the mean NDVI and its variance vary spatially? We would like to see
+   different ways of representing this relationship.
+1. In a 3D visualization it would be interesting to see the relation between NDVI and elevation. One could
+   easily plot NDVI vs. elevation, e.g. as a scatter plot, but it would be interesting to display this
+   relationship in real space.
+1. Animations and perhaps interactive visualizations. We would also welcome more artistic submissions, e.g. a
+   flyover above BC.
 
 
-
-<!-- A question that would be of particular interest to me (and others, I believe) is how the relationship between -->
-<!-- E(NDVI) and V(NDVI) varies spatially. I know that information is available in the statistical model I fit, but -->
-<!-- it would be interesting to see different ways of representing the relationship. I assumed all visualizations -->
-<!-- would be static images (not videos/gifs), but if dynamic visualizations are allowed then looking at the -->
-<!-- relationship over time would be even more interesting. I think mean and variance of NDVI over lat/long are -->
-<!-- sufficient, but we can include the elevation in case people want to use it. -->
 
 
 
@@ -37,9 +37,11 @@ author: "SFU"
 <!-- unusual ideas and approaches, so I’d rather not limit to a specific view. -->
 
 
-Stress on artistic visualization, e.g. a flyover above BC.
 
 
+
+<!-- question to Stefano: -->
+<!-- - how is V(NDVI) defined exactly? Is it spatial or temporal variance? -->
 
 
 
