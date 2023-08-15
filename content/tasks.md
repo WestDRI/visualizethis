@@ -6,7 +6,11 @@ aliases: ["about-us","about-hugo","contact"]
 author: "SFU"
 ---
 
-*Depending on which dataset you work on, please read the corresponding section below.*
+These guidelines are just suggestions, not the instructions. We would like to see unusual approaches and novel
+visualizations of these datasets. Please experiment with your tool of choice, and don't be afraid to try
+something new!
+
+*Depending on the dataset you work on, please read the corresponding section below.*
 
 <br>
 

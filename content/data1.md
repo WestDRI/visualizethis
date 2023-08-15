@@ -33,7 +33,7 @@ can be treated as elevation. All variables are stored in compressed NetCDF files
 
 The storm atmospheric data are presented with the following three 3D time-dependent variables:
 
-1. the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) ,
+1. the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon),
 2. the mass mixing ratio of rain MPQR(time,pres,rlat,rlon), and
 3. the mass mixing ratio of ice QTI1(time,pres,rlat,rlon)
 

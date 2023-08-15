@@ -22,7 +22,7 @@ menu:
     weight: 2
 ---
 
-*Depending on which dataset you work on, please read one of the two sections above.*
+*Depending on the dataset you work on, please read one of the two sections above.*
 
 
 

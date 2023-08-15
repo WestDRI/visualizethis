@@ -16,10 +16,14 @@ Please read [Contest terms](/#contest-terms) before sending us your work.
 
 # How to submit
 
+We will publish the instructions here and in the Contest's Google Group in the fall.
+
 # Prizes
 
-As the whole competition runs online this year, there will be no physical prizes. We will send certificates to
-the top three submissions, and we will publish top submissions on this website.
+<!-- As the whole competition runs online this year, there will be no physical prizes. -->
+
+We will send certificates to the top three submissions, and we will publish top submissions on this
+website. Winning participants will be also invited to present in our webinar in January 2024.
 
 <!-- # Judges -->
 
