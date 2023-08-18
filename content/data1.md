@@ -171,8 +171,8 @@ print(all.variables['lon'][:,:])      # 2D array of longitudes
 
 ### Acknowledgments
 
-Data courtesy of {{<a "https://alejandro-diluca.uqam.ca" "Alejandro Di Luca">}} from l'Université du Québec à
-Montréal. The simulation was conducted using the Alliance's Narval cluster.
+Data courtesy of {{<a "https://alejandro-diluca.uqam.ca" "Alejandro Di Luca">}} and François Roberge from
+l'Université du Québec à Montréal. The simulation was conducted using the Alliance's Narval cluster.
 
 <!-- Data storage services provided by Cedar team at Simon Fraser University, Canada. -->
 
