@@ -38,7 +38,8 @@ red band, respectively. NDVI always falls between -1 and +1 and can highlight th
 
 | Feature | Specs | NDVI range |
 | ------------- | --------------- | ----------------- |
-| Dense forest canopy | dark in red and bright in NIR | 0.6 -- 0.8 |
+| Dense forest canopy, e.g. in the Amazon | dark in red and bright in NIR | close to +1 |
+| Dense vegetation | dark in red and bright in NIR | 0.6 -- 0.8 |
 | Sparse vegetation (shrub and grassland) | brighter in NIR | 0.2 -- 0.3 |
 | Dry land with nothing growing | almost equal reflectance | 0 -- 0.1 |
 | Snow, glaciers, clouds | low reflectance in red, even lower NIR reflectance | -0.5 -- 0 |
@@ -50,6 +51,14 @@ You can find more about the NDVI on
 [Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) and in
 [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
 
+
+
+
+### Contest dataset
+
+What makes the current dataset unique <!-- novel --> is that -- while the mean NDVI has been calculated since
+the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time.
+
 The Contest dataset contains 5,939,758 points and 53 timesteps. At each point we provide its coordinates
 (longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
 points are not connected, i.e. they do not form a smooth surface. The 53 time steps are uniformly spread
@@ -59,13 +68,6 @@ In the compressed CSV format, in addition to regular geographic coordinates, for
 horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK
 format there is no need to provide these, as you would load a VTK file into ParaView, where *longitude*,
 *latitude*, and *elevation* already give the 3D coordinates that you can use directly in 3D space.
-
-
-
-
-
-
-
 
 
 
@@ -131,6 +133,13 @@ and then exported to numpy or xarray.
 
 ### References
 
+1. N. Pettorelli, S. Ryan, T. Mueller, N. Bunnefeld, B. Jędrzejewska, M. Lima, K. Kausrud (2011):
+   [The Normalized Difference Vegetation Index (NDVI): unforeseen successes in animal ecology](http://dx.doi.org/10.3354/cr00936). Climate
+   Research **46**, 15-27
+
+
+
+
 <!-- 1. M. H. Shahnas, W. R. Peltier, Z. Wu, R. Wentzcovitch (2011): [The high pressure electronic spin transition in iron: potential impacts upon mantle mixing](http://dx.doi.org/10.1029/2010JB007965). J. Geophys. Res. **116**, B08205 -->
 <!-- 1. M. H. Shahnas, R. N. Pysklywec, and D. A. Yuen (2016): [Spawning superplumes from the midmantle: The impact of spin transitions in the mantle](https://doi.org/10.1002/2016GC006509). Geochemistry, Geophysics, Geosystems **17**, 4051-4063 -->
 <!-- 1. M. H. Shahnas, D. A. Yuen, R.N. Pysklywec (2017): [Mid-mantle heterogeneities and iron spin transition in the lower mantle: Implications for mid-mantle slab stagnation](http://dx.doi.org/10.1016/j.epsl.2016.10.052). Earth and Planetary Science Letters **458**, 293–304 -->
@@ -138,5 +147,9 @@ and then exported to numpy or xarray.
 
 ### Acknowledgments
 
-Data courtesy of {{<a "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} and
-Stefano Mezzini from the University of British Columbia at Okanagan.
+Data courtesy of {{<a "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} and {{<a
+"https://github.com/StefanoMezzini" "Stefano Mezzini">}} from the University of British Columbia at Okanagan.
+
+
+
+<!-- {{<a "link" "text">}} -->

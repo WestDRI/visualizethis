@@ -12,7 +12,7 @@ something new!
 
 *Depending on the dataset you work on, please read the corresponding section below.*
 
-<br>
+<!-- <br> -->
 
 # Halloween storm over Eastern Canada
 
@@ -20,19 +20,28 @@ something new!
    both relative to topography and to each other.
 1. Show how these distributions affect the land snow cover and the sea surface pressure.
 
-<br>
+
+
+
+
+<!-- <br> -->
 
 # Normalized difference vegetation index
 
-1. How does the relationship between the mean NDVI and its variance vary spatially? We would like to see
-   different ways of representing this relationship.
-1. In a 3D visualization it would be interesting to see the relation between NDVI and elevation. One could
-   easily plot NDVI vs. elevation, e.g. as a scatter plot, but it would be interesting to display this
-   relationship in real space.
+1. Visualize how both the mean NDVI and its variance change over space and/or time.
+1. Demonstrate the mean-variance relationship and how it changes in space and time.
+1. Show the importance of variance, and also the importance of **not** assuming that it is constant over time
+   and space.
+1. In a 3D visualization it would be interesting to see the relation between both NDVI variables and
+   elevation. One could easily plot, e.g. the mean NDVI vs. elevation, e.g. as a scatter plot, but it would be
+   interesting to display this relationship in real space.
 1. Animations and perhaps interactive visualizations. We would also welcome more artistic submissions, e.g. a
    flyover above BC.
 
 
+
+<!-- 1. How does the relationship between the mean NDVI and its variance vary spatially? We would like to see -->
+<!--    different ways of representing this relationship. -->
 
 
 
