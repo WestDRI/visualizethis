@@ -59,7 +59,7 @@ difference vegetation index) data at the global scale. NDVI is a measure of gree
 the ecosystem productivity. To limit the size of the dataset, here we provide data only for BC.
 
 <br>
-{{< yt KbaN46pcuhI 63 >}}
+{{< yt OoMHTwn5luU 90 >}}
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 2:</b> NDVI as a function of time for BC. </font> </p>
 <br>
 

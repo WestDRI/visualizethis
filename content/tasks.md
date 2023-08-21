@@ -31,7 +31,7 @@ something new!
 1. Visualize how both the mean NDVI and its variance change over space and/or time.
 1. Demonstrate the mean-variance relationship and how it changes in space and time.
 1. Show the importance of variance, and also the importance of **not** assuming that it is constant over time
-   and space.
+   and space. How stochastic (unpredictable) are the ecosystems?
 1. In a 3D visualization it would be interesting to see the relation between both NDVI variables and
    elevation. One could easily plot, e.g. the mean NDVI vs. elevation, e.g. as a scatter plot, but it would be
    interesting to display this relationship in real space.

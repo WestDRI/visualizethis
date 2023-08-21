@@ -57,17 +57,21 @@ You can find more about the NDVI on
 ### Contest dataset
 
 What makes the current dataset unique <!-- novel --> is that -- while the mean NDVI has been calculated since
-the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time.
+the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time. Both
+the mean NDVI and its variance provided here were produced by a global-scale hierarchical GAM (generalized
+additive model) over a multi-GB raw dataset, and for a given location and time, the mean and the variance are
+formed by data close in time or space.
 
 The Contest dataset contains 5,939,758 points and 53 timesteps. At each point we provide its coordinates
 (longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
 points are not connected, i.e. they do not form a smooth surface. The 53 time steps are uniformly spread
 throughout 2022 from Jan-01 (first step) to Dec-31 (last step).
 
-In the compressed CSV format, in addition to regular geographic coordinates, for each point we provide two
-horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK
-format there is no need to provide these, as you would load a VTK file into ParaView, where *longitude*,
-*latitude*, and *elevation* already give the 3D coordinates that you can use directly in 3D space.
+Data are provided in two formats: VTK and compressed CSV. In the compressed CSV format, in addition to regular
+geographic coordinates, for each point we provide two horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in
+the Albers projection. We feel that with the VTK format there is no need to provide these, as you would
+typically load a VTK file into ParaView where *longitude*, *latitude*, and *elevation* already map each point
+into the 3D space.
 
 
 
@@ -97,7 +101,7 @@ format there is no need to provide these, as you would load a VTK file into Para
 
 ### Downloading the data
 
-Data will be published here in mid-September. It will be provided in two formats: VTK and compressed CSV.
+Data will be published here in mid-September.
 
 ### Loading the data in ParaView
 

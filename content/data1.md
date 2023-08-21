@@ -77,34 +77,9 @@ in ParaView.
 
 Data will be published here in mid-September.
 
-<!-- for f in *.nc; do -->
-<!--     echo $(echo $f; ls -l $f | awk '{print $5}'; md5 $f | awk '{print $4}') -->
-<!-- done -->
 
-<!-- | File   |  Size      |  MD5 checksum | -->
-<!-- |--------|------------|---------------| -->
-<!-- | [dm2015090100_00000000p.nc](link) | 5.1M | 5a4b0af90fc3129ca6dba95942061dae | -->
-<!-- | [dm2015090100_20191031d.nc](link) | 46M  | 2b202060bba4d8e3005bd2a95923202b | -->
-<!-- | [dm2015090100_20191101d.nc](link) | 44M  | d17dd34b2d3db207aaace49ac97a8e34 | -->
-<!-- | [dm2015090100_20191102d.nc](link) | 43M  | 69c6f8fa8afb1d626b098336729dbfb9 | -->
-<!-- | [dp2015090100_20191031d.nc](link) | 396M | 2fd61a2cba4a1638731871ab844e8e4c | -->
-<!-- | [dp2015090100_20191101d.nc](link) | 330M | d94f015edffd59bf985df223847aab98 | -->
-<!-- | [dp2015090100_20191102d.nc](link) | 246M | a7eb5e8b268002fb8708b00e69f65e7b | -->
-<!-- | [pm2015090100_00000000p.nc](link) | 4.1M | fbc4b1e1f987b7392b14a50767489fcc | -->
-<!-- | [pm2015090100_20191031d.nc](link) | 23M  | 61b20877923943beedb84d2083d29b34 | -->
-<!-- | [pm2015090100_20191101d.nc](link) | 27M  | 1ece29fade591f65a9aea4cb22c3c5fe | -->
-<!-- | [pm2015090100_20191102d.nc](link) | 28M  | ca9dee21c598a76275357f4faa7ca1b1 | -->
 
-<!-- To download all files via bash command line: -->
 
-<!-- ``` -->
-<!-- urls=( edS6be3sk8oQ58N infBBW2Rc9TJwf7 76Esj3yDP9EiaGc AZmt47d48prCZZF -->
-<!--        JdzZQCKiHaRfL9L DXnWtA5fymHBsxA HzgtF42Pf9AnxGm yy8FASeC8Dm54Sy -->
-<!--        TC8QekmjokmBkWA ) -->
-<!-- for i in $(seq 0 24); do -->
-<!--     wget https://nextcloud.computecanada.ca/index.php/s/"${urls[$i]}"/download -O mantle"$(printf "%02d\n" $((i+1)))".tgz -->
-<!-- done -->
-<!-- ``` -->
 
 ### Loading the data in ParaView
 
