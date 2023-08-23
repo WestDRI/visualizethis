@@ -58,20 +58,23 @@ You can find more about the NDVI on
 
 What makes the current dataset unique <!-- novel --> is that -- while the mean NDVI has been calculated since
 the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time. Both
-the mean NDVI and its variance provided here were produced by a global-scale hierarchical GAM (generalized
+the mean NDVI and its variance provided here were produced by a BC-scale hierarchical GAM (generalized
 additive model) over a multi-GB raw dataset, and for a given location and time, the mean and the variance are
 formed by data close in time or space.
 
-The Contest dataset contains 5,939,758 points and 53 timesteps. At each point we provide its coordinates
+The Contest dataset contains 5,935,736 points and 53 timesteps. At each point we provide its coordinates
 (longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
 points are not connected, i.e. they do not form a smooth surface. The 53 time steps are uniformly spread
 throughout 2022 from Jan-01 (first step) to Dec-31 (last step).
 
-Data are provided in two formats: VTK and compressed CSV. In the compressed CSV format, in addition to regular
-geographic coordinates, for each point we provide two horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in
-the Albers projection. We feel that with the VTK format there is no need to provide these, as you would
-typically load a VTK file into ParaView where *longitude*, *latitude*, and *elevation* already map each point
-into the 3D space.
+**To be edited**: Data are provided in two formats: VTK and compressed CSV. In the compressed CSV format, in
+addition to regular geographic coordinates, for each point we provide two horizontal coordinates ($x_{\rm
+alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK format there is no need to provide
+these, as you would typically load a VTK file into ParaView where *longitude*, *latitude*, and *elevation*
+already map each point into the 3D space.
+
+<!-- Please note that in the VTK files the elevation has been scaled down by 10X so that it displays nicely in -->
+<!-- ParaView without manual re-scaling. -->
 
 
 
@@ -114,14 +117,13 @@ you can render data by:
 - using the Point Gaussian representation, or
 - using Glyphs, or
 - triangulating or projecting data onto a mesh (uniform or not).
-Cartesian, polygonal
 
 ### Loading the data in Python
 
 To read VTK files in Python, you can use the official [VTK Python library](https://pypi.org/project/vtk), as
 well as a number of 3rd-party libraries, e.g. [meshio](https://github.com/nschloe/meshio).
 
-CSV data can be read directly with Pandas:
+The compressed CSV files can be read directly with Pandas:
 
 ```py
 import pandas as pd

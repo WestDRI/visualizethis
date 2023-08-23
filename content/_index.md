@@ -41,8 +41,10 @@ distribution of clouds (white), rain (green to cyan), and ice crystals (yellow) 
 two projections, along the x- and y-axes, to highlight the relative vertical distribution of the three
 variables.
 
+<!-- {{< yt 3fpc2fFaLP4 63 >}} -->
+
 <br>
-{{< yt 3fpc2fFaLP4 63 >}}
+<iframe width="756" height="477" src="https://www.youtube.com/embed/3fpc2fFaLP4?rel=0" title="Simulation of a storm over Eastern Canada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 1:</b> Distribution of clouds (white), rain (green to
 cyan), and ice crystals (yellow) over 6 days starting with the storm on October 31, 2019. </font> </p>
 <br>
@@ -58,8 +60,10 @@ at Okanagan). They compiled approximately one year of openly-available remotely 
 difference vegetation index) data at the global scale. NDVI is a measure of greenness, widely used to measure
 the ecosystem productivity. To limit the size of the dataset, here we provide data only for BC.
 
+<!-- {{< yt 5hZ59mDdBnI 90 >}} -->
+
 <br>
-{{< yt OoMHTwn5luU 90 >}}
+<iframe width="756" height="681" src="https://www.youtube.com/embed/5hZ59mDdBnI?rel=0" title="NDVI over time in BC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 2:</b> NDVI as a function of time for BC. </font> </p>
 <br>
 
