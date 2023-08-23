@@ -59,8 +59,8 @@ You can find more about the NDVI on
 What makes the current dataset unique <!-- novel --> is that -- while the mean NDVI has been calculated since
 the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time. Both
 the mean NDVI and its variance provided here were produced by a BC-scale hierarchical GAM (generalized
-additive model) over a multi-GB raw dataset, and for a given location and time, the mean and the variance are
-formed by data close in time or space.
+additive model) over a multi-GB raw dataset so that -- for a given location and time -- the mean and the
+variance are formed by data close in time or space.
 
 The Contest dataset contains 5,935,736 points and 53 timesteps. At each point we provide its coordinates
 (longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
