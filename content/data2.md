@@ -62,16 +62,35 @@ the mean NDVI and its variance provided here were produced by a BC-scale hierarc
 additive model) over a multi-GB raw dataset so that -- for a given location and time -- the mean and the
 variance are formed by data close in time or space.
 
-The Contest dataset contains 5,935,736 points and 53 timesteps. At each point we provide its coordinates
-(longitude, latitude, elevation in km) and two variables: mean NDVI ($\mu$) and its variance ($\sigma_2$). The
-points are not connected, i.e. they do not form a smooth surface. The 53 time steps are uniformly spread
-throughout 2022 from Jan-01 (first step) to Dec-31 (last step).
+<!-- <u>To be edited</u>: -->
 
-**To be edited**: Data are provided in two formats: VTK and compressed CSV. In the compressed CSV format, in
-addition to regular geographic coordinates, for each point we provide two horizontal coordinates ($x_{\rm
-alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK format there is no need to provide
-these, as you would typically load a VTK file into ParaView where *longitude*, *latitude*, and *elevation*
-already map each point into the 3D space.
+The Contest dataset contains 5,935,736 points and 53 timesteps. The points are not connected, i.e. they do not
+form a smooth surface. The 53 time steps are uniformly spread throughout 2022 from Jan-01 (first step) to
+Dec-31 (last step).
+
+Data are provided in two formats: VTK and compressed CSV. Each format is self-contained -- use one of them
+depending on which data description you like best (no need to use both).
+
+1. In the VTK files each point is placed in the 3D space using its Cartesian coordinates ($x$, $y$, $z$). On
+   top of each point, we store three variables: the mean NDVI ($\mu$), its variance ($\sigma_2$), and
+   *elevation* in km.
+
+2. In the compressed CSV format, each row corresponds to a data point with *longitude*, *latitude*,
+   *elevation* in km, two horizontal coordinates ($x_{\rm alb}$, $y_{\rm alb}$) in the Albers equal-area conic
+   projection, the mean NDVI ($\mu$), and its variance ($\sigma_2$).
+
+
+
+
+
+<!-- addition to regular geographic coordinates, for each point we provide two horizontal coordinates ($x_{\rm -->
+<!-- alb}$, $y_{\rm alb}$) in the Albers projection. We feel that with the VTK format there is no need to provide -->
+<!-- these, as you would typically load a VTK file into ParaView where *longitude*, *latitude*, and *elevation* -->
+<!-- already map each point into the 3D space. -->
+
+
+
+
 
 <!-- Please note that in the VTK files the elevation has been scaled down by 10X so that it displays nicely in -->
 <!-- ParaView without manual re-scaling. -->
@@ -117,6 +136,38 @@ you can render data by:
 - using the Point Gaussian representation, or
 - using Glyphs, or
 - triangulating or projecting data onto a mesh (uniform or not).
+
+You can easily manipulate data inside ParaView with the Programmable Filter. To give you an example, assuming
+you have read data from the compressed CSV format, a new filter with *Output Type = Same as Input* and the
+following Python code inside the filter
+
+```py
+import numpy as np
+npoints = inputs[0].Points.shape[0]
+lon = np.radians(inputs[0].Points[:,0])
+lat = np.radians(inputs[0].Points[:,1])
+points = vtk.vtkPoints()
+radius = 6371
+for i in range(npoints):
+    r = radius + inputs[0].Points[i,2]
+    x = r * np.cos(lon[i]) * np.cos(lat[i])
+    y = r * np.sin(lon[i]) * np.cos(lat[i])
+    z = r * np.sin(lat[i])
+    points.InsertNextPoint(x,y,z)
+
+output.SetPoints(points)
+output.PointData.append(inputs[0].PointData['mu'], 'mu')
+output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
+```
+
+will let you create a new set of points that are mapped into the 3D space using *longitude*, *latitude*, and
+*elevation*. To learn more about ParaView's Programmable Filter, watch
+{{<a "https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
+
+
+
+
+
 
 ### Loading the data in Python
 

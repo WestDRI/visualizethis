@@ -88,7 +88,7 @@ right subset of input variables.
 
 Since all variables are on a spherical mesh, you might want to use non-default *vertical scale* and *vertical
 bias* when loading data. Alternatively, you can project any spherical variable to a Cartesian mesh using the
-Programmable Filter with Output Type = vtkImageData, e.g.
+Programmable Filter with *Output Type = vtkImageData*, e.g.
 
 ```py
 ext = inputs[0].GetExtent()
