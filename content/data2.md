@@ -160,9 +160,9 @@ output.PointData.append(inputs[0].PointData['mu'], 'mu')
 output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
 ```
 
-will let you create a new set of points that are mapped into the 3D space using their *longitude*, *latitude*, and
-*elevation*. To learn more about ParaView's Programmable Filter, watch
-{{<a "https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
+will create a new set of points that are mapped into the 3D space using their *longitude*, *latitude*, and
+*elevation*. To learn more about ParaView's Programmable Filter, watch {{<a
+"https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
 
 
 
