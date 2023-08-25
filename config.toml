@@ -34,7 +34,7 @@ utterancesIssue = "" # optional
 utterancesLabel = "" # optional
 
 [[params.social]]
-id = "docs"
+id = "books"
 url = "https://docs.alliancecan.ca/wiki/Visualization"
 
 # [[params.social]]
