@@ -60,7 +60,7 @@ What makes the current dataset unique <!-- novel --> is that -- while the mean N
 the 1970s -- this dataset is one of the first attempts to map the variance in NDVI over space and time. Both
 the mean NDVI and its variance provided here were produced by a BC-scale hierarchical GAM (generalized
 additive model) over a multi-GB raw dataset so that -- for a given location and time -- the mean and the
-variance are formed by data close in time or space.
+variance are informed by data close in time or space.
 
 <!-- <u>To be edited</u>: -->
 
@@ -160,7 +160,7 @@ output.PointData.append(inputs[0].PointData['mu'], 'mu')
 output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
 ```
 
-will let you create a new set of points that are mapped into the 3D space using *longitude*, *latitude*, and
+will let you create a new set of points that are mapped into the 3D space using their *longitude*, *latitude*, and
 *elevation*. To learn more about ParaView's Programmable Filter, watch
 {{<a "https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
 
