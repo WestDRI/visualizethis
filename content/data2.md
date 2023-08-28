@@ -125,6 +125,12 @@ depending on which data description you like best (no need to use both).
 
 Data will be published here in mid-September.
 
+<!-- ~/visualizeThis/website/hidden/current.md -->
+
+
+
+
+
 ### Loading the data in ParaView
 
 Each data format can be easily loaded into ParaView. When loading from CSV, you have to pass points through
