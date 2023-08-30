@@ -175,6 +175,16 @@ will create a new set of points that are mapped into the 3D space using their *l
 
 
 
+### NDVI colour map
+
+If you like, you can use [the blue-to-brown-to-green NDVI colour map](../../ndvi.json.gz) covering the values from -1 to +1.
+
+
+
+
+
+
+
 ### Loading the data in Python
 
 To read VTK files in Python, you can use the official [VTK Python library](https://pypi.org/project/vtk), as
