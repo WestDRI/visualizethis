@@ -28,6 +28,6 @@ website. Winning participants will be also invited to present in our webinar in 
 
 # Judges
 
-- Alex Razoumov (SFU)
-- Jarno van der Kolk (University of Ottawa)
-- Angus Creech (Memorial University)
+- Alex Razoumov, Research Solutions Lead, Research Computing, Simon Fraser University
+- Jarno van der Kolk, Senior Scientific Computing Specialist, University of Ottawa
+- Angus Creech, Technical Solutions Specialist, Memorial University and Adjunct Professor, Dalhousie University
