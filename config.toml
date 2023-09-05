@@ -82,7 +82,7 @@ weight = 5
 
 [languages.fr]
 languageName = "French"
-title = "Faites-nous voir ça!"
+title = "Visualise ça !"
 [[languages.fr.menu.main]]
 identifier = "data"
 name = "Données"
@@ -105,7 +105,7 @@ url = "/results/"
 weight = 4
 [[languages.fr.menu.main]]
 identifier = "contact"
-name = "📬"
+name = "Contact 📬"
 url = "/contact/"
 weight = 5
 # [[languages.fr.menu.main]]
