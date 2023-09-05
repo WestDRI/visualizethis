@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="+3">2023 *Visualize This* Contest: two datasets</font>
+<font size="+3">2023 *Visualize This!* Contest: two datasets</font>
 
 <!-- <font size="+0"> -->
 <!-- </font> -->
