@@ -59,10 +59,10 @@ something new!
 
 ## Resources
 
-- {{<a "https://docs.alliancecan.ca/wiki/Visualization" "Visualization page">}} in our documentation
-- Our {{<a "https://training.westdri.ca/tools/visualization" "visualization webinars and training materials">}}
+- {{<a "https://docs.alliancecan.ca/wiki/Visualization" "Visualization page">}} in our documentation.
+- Our {{<a "https://training.westdri.ca/tools/visualization" "visualization webinars and training materials">}}.
 - The Alliance's {{<a "https://ccvis.netlify.app" "National Visualization Team">}} with a link to previous
-  contests
+  contests.
 
 
 <!-- {{<a "link" "text">}} -->

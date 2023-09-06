@@ -25,6 +25,6 @@ Les informations ci-dessous ne sont pas des instructions, mais simplement des su
 
 ## Ressources
 
-- {{<a "https://docs.alliancecan.ca/wiki/Visualization/fr" "Page sur la visualisation">}} dans notre wiki
-- Nos {{<a "https://training.westdri.ca/tools/visualization" "webinaires et ateliers de visualisation">}}
-- {{<a "https://ccvis.netlify.app" "Le site de l'Equipe Nationale de Visualisation">}} de l'Alliance avec un lien vers les concours passés
+- {{<a "https://docs.alliancecan.ca/wiki/Visualization/fr" "Page sur la visualisation">}} dans notre wiki.
+- Nos {{<a "https://training.westdri.ca/tools/visualization" "webinaires et ateliers de visualisation">}}.
+- {{<a "https://ccvis.netlify.app" "Le site de l'Equipe Nationale de Visualisation">}} de l'Alliance avec un lien vers les concours passés.
