@@ -24,35 +24,35 @@ Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "
 
 # Jeu de données n°1 : tempête d'Halloween sur l'est du Canada
 
-Le premier ensemble de données, fourni par le groupe de recherche de {{<a "https://alejandro-diluca.uqam.ca"
-"Alejandro Di Luca">}} (Université du Québec à Montréal), est issu d'une simulation numérique d'une tempête
-sur l'est du Canada pendant Halloween 2019.
+Le premier jeu de données, fourni par le groupe de recherche {{<a "https://alejandro-diluca.uqam.ca"
+"d´Alejandro Di Luca">}} (Université du Québec à Montréal), est issu d'une simulation numérique d'une tempête sur l'est du Canada en 2019 pendant Halloween.
 
-L'animation ci-dessous (si vous ne la voyez pas, veuillez cliquer sur le titre) couvre six jours du 31 octobre au
-5 novembre 2019. Le volume 3D présente la répartition des nuages ​​(blanc), de la pluie (vert à cyan) et de la glace
-cristaux (jaune) dans l'atmosphère, tandis que la surface 2D en bas montre l'accumulation de neige sur le
-sol. Les variables 3D sont également affichées dans les deux projections, le long des axes x et y, pour mettre en évidence les
-distribution verticale des trois variables.
+L'animation ci-dessous couvre six jours, du 31 octobre au
+5 novembre 2019. Le volume en 3D représente la répartition des nuages ​​(en blanc), de la pluie (de vert à turquoise) et des cristaux de glace (en jaune) dans l'atmosphère, tandis que la surface en 2D en bas montre l'accumulation de neige sur le sol. Les variables en 3D sont également représentées dans les deux projections, le long des axes x et y, pour mettre en évidence les
+distributions verticales des trois variables.
 
-{{< yt 3fpc2fFaLP4 63 >}}
-<p style="line-height: 1.2;"> <font size="3"> <b>Figure 1:</b> Répartition des nuages ​​(blancs), de la pluie (vert à
-cyan) et cristaux de glace (jaune) sur 6 jours à partir de la tempête du 31 octobre 2019.</font> </p>
+<!-- {{< yt 3fpc2fFaLP4 63 >}} -->
+<br>
+<iframe width="756" height="477" src="https://www.youtube.com/embed/3fpc2fFaLP4?rel=0" title="Simulation d´une tempête sur l´est du Canada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p style="line-height: 1.2;"> <font size="3"> <b>Figure 1 :</b> Répartition des nuages ​​(en blancs), de la pluie (de vert à turquoise) et des cristaux de glace (en jaune) pendant 6 jours, à partir de la tempête du 31 octobre 2019.</font> </p>
 
-Le principal défi de cet ensemble de données est de montrer les distributions qui se chevauchent de plusieurs variables 3D, idéalement
-(mais pas nécessairement!) dans la même visualisation.
+Pour plus d´informations sur ce jeu de données, veuillez cliquer [ici](/data/storm/). Le défi est de montrer les distributions de plusieurs variables qui se chevauchent en 3D, idéalement (mais pas nécessairement !) dans la même visualisation.
 
 # Jeu de données n°2 : indice de végétation par différence normalisée (IVDN)
 
-Le deuxième ensemble de données, fourni par le groupe de recherche de {{<a
-"https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} (UBC Okanagan), compile environ
-20 ans de données de télédétection NDVI (indice de végétation par différence normalisée) librement disponibles
-à l'échelle mondiale. Le NDVI est une mesure de la verdure, régulièrement utilisée pour mesurer la
-productivité de l'écosystème.
+Le deuxième jeu de données a été fourni par le groupe de recherche de {{<a
+"https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} (Université de la Colombie-Britannique en Okanagan). Ils ont compilé une année de données de télédétection IVDN (indice de végétation par différence normalisée) disponibles gratuitement à l'échelle du globe. L´IVDN est une mesure de verdeur, régulièrement utilisée pour mesurer la productivité d´un écosystème. Afin de réduire la taille du jeu de données, nous fournissons ici uniquement les données pour la Colombie Britannique.
+
+<br>
+<iframe width="756" height="681" src="https://www.youtube.com/embed/5hZ59mDdBnI?rel=0" title="Evolution de l´IVDN en Colombie Britannique" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p style="line-height: 1.2;"> <font size="3"> <b>Figure 2 :</b> Evolution de l´IVDN au cours du temps en CB. </font> </p>
+<br>
+
 
 # Conditions du concours
 
 Veuillez n´utiliser que des outils et logiciels open source afin que tout le monde puisse reproduire vos résultats sans avoir besoin d´acheter des licences d´outils commerciaux. {{<a
 "https://www.paraview.org" "ParaView">}} et {{<a "https://visit-dav.github.io/visit-website" "VisIt">}} sont deux outils de visualisation 3D populaires, mais vous êtes libres d´utiliser n´importe quel outil open source et le(s) langage(s) de programmation de votre choix : il y a de nombreux outils disponibles pour visualiser ce type de données ; ce que vous pouvez faire avec n´est limité que par votre imagination.
 
-Votre soumission (les images/films, ainsi que la méthode) sera publiée sous <a
+Votre soumission (les images/films ainsi que la méthode) sera publiée sous <a
 rel="license" href="http://creativecommons.org/licenses/by/4.0">une licence internationale Creative Commons Attribution 4.0</a>.
