@@ -34,7 +34,7 @@ something new!
    and space. How stochastic (unpredictable) are the ecosystems?
 1. In a 3D visualization it would be interesting to see the relationship between both NDVI variables and
    elevation. For instance, one could easily create a scatter plot of the mean NDVI vs. the elevation, but it would be more interesting to display this relationship in real space.
-1. Animations and perhaps interactive visualizations. We would also welcome more artistic submissions, e.g. a
+1. Try animations and perhaps interactive visualizations. We would also welcome more artistic submissions, e.g. a
    flyover above BC.
 
 
