@@ -11,12 +11,12 @@ author = "SFU"
 <!-- (avec un processus de révision accéléré) à IEEE Computer Graphics et Journal des applications (CG&A). Le -->
 <!-- concours est sponsorisé par [IEEE Vis](http://ieeevis.org) et [Calcul Canada](https://www.calculcanada.ca).* -->
 
-Hébergée par [l´Alliance de recherche numérique du Canada](https://alliancecan.ca/fr) et ses partenaires régionaux, et maintenant dans sa 6ème année, *Visualisez ça !* est une compétition nationale célébrant les méthodes de visualisation innovantes qui aident les chercheurs à explorer des jeux de données et à répondre à des questions scientifiques importantes.
+Hébergée par [l´Alliance de recherche numérique du Canada](https://alliancecan.ca/fr) et ses partenaires régionaux, et maintenant dans sa 6ème année consécutive, *Visualisez ça !* est une compétition nationale célébrant les méthodes de visualisation innovantes qui aident les chercheurs à explorer des données scientifiques et à répondre à des questions importantes.
 
 *Visualisez ça !* est une opportunité de tester votre créativité, d´expérimenter avec des outils de pointe et de contribuer au développent de la visualisation de données au Canada.
 
 <font color="#439596"> Cette année, vous avez le choix entre deux jeux de données géospatiales : une simulation numérique et un jeu de données empiriques. </font>
-Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir le formulaire">}} — vous serez automatiquement ajouté au groupe Google ¨Visualise ça 2023¨ où nous posterons toutes les informations nécessaires.
+Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir le formulaire">}} — vous serez automatiquement ajouté au groupe Google « Visualise ça 2023 » où toutes les informations nécessaires seront postées.
 
 <!-- *Dans le concours de cette année, vous pouvez travailler sur l'un des deux ensembles de données.* -->
 
