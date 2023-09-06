@@ -34,8 +34,8 @@ can be treated as elevation. All variables are stored in compressed NetCDF files
 The storm atmospheric data are presented with the following three 3D time-dependent variables:
 
 1. the mass mixing ratio of cloud `MPQC(time,pres,rlat,rlon)`,
-2. the mass mixing ratio of rain `MPQR(time,pres,rlat,rlon)`, and
-3. the mass mixing ratio of ice `QTI1(time,pres,rlat,rlon)`
+2. the mass mixing ratio of rain `MPQR(time,pres,rlat,rlon)`,
+3. the mass mixing ratio of ice `QTI1(time,pres,rlat,rlon)`.
 
 inside three files `dp2015090100_2019{1031,1101,1102}d.nc` for Oct-31, Nov-01, and Nov-02, respectively. Each
 NetCDF file contains 24 hourly steps.
@@ -43,7 +43,7 @@ NetCDF file contains 24 hourly steps.
 The effect of the storm at the surface is described by two 2D time-dependent variables:
 
 4. the amount of snow (in water equivalent mm) on the ground I5(time,rlat,rlon) inside
-   `pm2015090100_2019{1031,1101,1102}d.nc`, and
+   `pm2015090100_2019{1031,1101,1102}d.nc`,
 5. the mean sea level pressure PN(time,rlat,rlon) inside `dm2015090100_2019{1031,1101,1102}d.nc`.
 
 Finally, the topography is provided by the following 2D static (no time dependency) variables:
