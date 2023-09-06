@@ -20,7 +20,7 @@ contribute to the growth of data visualization in Canada!
 
 <!-- Other possible colours: #FF4500 #777777 #FC5900 #439596 -- see https://bit.ly/45cOl61 -->
 
-<font color="#439596"> In this year's Contest you can work on one of the two datasets below. Both datasets
+<font color="#439596"> In this year's contest you can work on one of the two datasets below. Both datasets
 contain geospatial data, one from a numerical simulation, and the other compiled from several empirical
 sources. </font>
 To participate in the challenge, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}}
