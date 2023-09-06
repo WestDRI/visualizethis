@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="+3">2023 Concours *Faites-nous voir ça*: deux ensembles de données</font>
+<font size="+3">Concours *Visualise ça !* 2023 : deux jeux de données</font>
 
 <!-- *Le concours IEEE SciVis 2021 est dédié à la création de nouvelles approches et de visualisations de pointe -->
 <!-- pour aider scientifiques du domaine pour mieux comprendre les processus de convection dans le manteau -->
@@ -11,11 +11,18 @@ author = "SFU"
 <!-- (avec un processus de révision accéléré) à IEEE Computer Graphics et Journal des applications (CG&A). Le -->
 <!-- concours est sponsorisé par [IEEE Vis](http://ieeevis.org) et [Calcul Canada](https://www.calculcanada.ca).* -->
 
-*Dans le concours de cette année, vous pouvez travailler sur l'un des deux ensembles de données.*
+Hébergée par [l´Alliance de recherche numérique du Canada](https://alliancecan.ca/fr) et ses partenaires régionaux, et maintenant dans sa 6ème année, *Visualisez ça !* est une compétition nationale célébrant les méthodes de visualisation innovantes qui aident les chercheurs à explorer des jeux de données et à répondre à des questions scientifiques importantes.
+
+*Visualisez ça !* est une opportunité de tester votre créativité, d´expérimenter avec des outils de pointe et de contribuer au développent de la visualisation de données au Canada.
+
+<font color="#439596"> Cette année, vous avez le choix entre deux jeux de données géospatiales : une simulation numérique et un jeu de données empiriques. </font>
+Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir le formulaire">}} — vous serez automatiquement ajouté au groupe Google ¨Visualise ça 2023¨ où nous posterons toutes les informations nécessaires.
+
+<!-- *Dans le concours de cette année, vous pouvez travailler sur l'un des deux ensembles de données.* -->
 
 <!-- <br> -->
 
-# Ensemble de données 1: tempête d'Halloween sur l'est du Canada
+# Jeu de données 1: tempête d'Halloween sur l'est du Canada
 
 Le premier ensemble de données, fourni par le groupe de recherche de {{<a "https://alejandro-diluca.uqam.ca"
 "Alejandro Di Luca">}} (Université du Québec à Montréal), est issu d'une simulation numérique d'une tempête
