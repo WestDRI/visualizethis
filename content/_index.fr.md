@@ -2,7 +2,7 @@
 author = "SFU"
 +++
 
-<font size="+3">Concours *Visualise ça !* 2023 : deux jeux de données</font>
+<font size="+3">Concours *Visualisez ça !* 2023 : deux jeux de données</font>
 
 <!-- *Le concours IEEE SciVis 2021 est dédié à la création de nouvelles approches et de visualisations de pointe -->
 <!-- pour aider scientifiques du domaine pour mieux comprendre les processus de convection dans le manteau -->
