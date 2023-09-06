@@ -51,8 +51,8 @@ productivité de l'écosystème.
 
 # Conditions du concours
 
-Veuillez n´utiliser que des outils et logiciels open source afin que tous le monde puisse reproduire vos résultat sans avoir besoin de payer pour des outils commerciaux. {{<a
-"https://www.paraview.org" "ParaView">}} et {{<a "https://visit-dav.github.io/visit-website" "VisIt">}} sont deux outils de visualisation 3D populaires, mais vous êtes libres d´utiliser n´importe quel outil open source et le(s) langage(s) de programmation de votre choix : il y a de nombreux outils disponibles pour visualiser ce type de données. Ce que vous pouvez faire avec n´est limité que par votre imagination.
+Veuillez n´utiliser que des outils et logiciels open source afin que tout le monde puisse reproduire vos résultats sans avoir besoin d´acheter des licences d´outils commerciaux. {{<a
+"https://www.paraview.org" "ParaView">}} et {{<a "https://visit-dav.github.io/visit-website" "VisIt">}} sont deux outils de visualisation 3D populaires, mais vous êtes libres d´utiliser n´importe quel outil open source et le(s) langage(s) de programmation de votre choix : il y a de nombreux outils disponibles pour visualiser ce type de données ; ce que vous pouvez faire avec n´est limité que par votre imagination.
 
-Votre soumission (les images/films et la méthode) seront publiés sous <a
+Votre soumission (les images/films et la méthode) sera publiée sous <a
 rel="license" href="http://creativecommons.org/licenses/by/4.0">une licence internationale Creative Commons Attribution 4.0</a>.
