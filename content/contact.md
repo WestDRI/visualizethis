@@ -6,8 +6,8 @@ aliases: ["about-us","contact"]
 author: "SFU"
 ---
 
-The *Visualize This* 2023 is organized by [the Digital Research Alliance of Canada](https://alliancecan.ca)
-and its regional partners, and specifically by Alex Razoumov (SFU), Jarno van der Kolk (University of Ottawa),
+The *Visualize This!* 2023 Contest is organized by [the Digital Research Alliance of Canada](https://alliancecan.ca)
+and its regional partners, and specifically by Alex Razoumov (Simon Fraser University), Jarno van der Kolk (University of Ottawa),
 and Angus Creech (Memorial University). For quick questions about the Contest, please
 [use this form](https://forms.gle/kLo2mL5NM2FMtXoz9).
 
