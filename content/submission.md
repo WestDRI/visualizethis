@@ -2,7 +2,7 @@
 title: "Submission"
 # description: ""
 # date: "2023-06-30"
-aliases: ["about-us","about-hugo","contact"]
+aliases: ["about-us","contact"]
 author: "SFU"
 ---
 
