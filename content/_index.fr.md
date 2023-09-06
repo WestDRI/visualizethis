@@ -22,7 +22,7 @@ Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "
 
 <!-- <br> -->
 
-# Jeu de données 1: tempête d'Halloween sur l'est du Canada
+# Jeu de données n°1 : tempête d'Halloween sur l'est du Canada
 
 Le premier ensemble de données, fourni par le groupe de recherche de {{<a "https://alejandro-diluca.uqam.ca"
 "Alejandro Di Luca">}} (Université du Québec à Montréal), est issu d'une simulation numérique d'une tempête
@@ -41,7 +41,7 @@ cyan) et cristaux de glace (jaune) sur 6 jours à partir de la tempête du 31 oc
 Le principal défi de cet ensemble de données est de montrer les distributions qui se chevauchent de plusieurs variables 3D, idéalement
 (mais pas nécessairement!) dans la même visualisation.
 
-# Ensemble de données 2: indice de végétation par différence normalisée (IVDN)
+# Jeu de données n°2 : indice de végétation par différence normalisée (IVDN)
 
 Le deuxième ensemble de données, fourni par le groupe de recherche de {{<a
 "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} (UBC Okanagan), compile environ
@@ -50,3 +50,9 @@ Le deuxième ensemble de données, fourni par le groupe de recherche de {{<a
 productivité de l'écosystème.
 
 # Conditions du concours
+
+Veuillez n´utiliser que des outils et logiciels open source afin que tous le monde puisse reproduire vos résultat sans avoir besoin de payer pour des outils commerciaux. {{<a
+"https://www.paraview.org" "ParaView">}} et {{<a "https://visit-dav.github.io/visit-website" "VisIt">}} sont deux outils de visualisation 3D populaires, mais vous êtes libres d´utiliser n´importe quel outil open source et le(s) langage(s) de programmation de votre choix : il y a de nombreux outils disponibles pour visualiser ce type de données. Ce que vous pouvez faire avec n´est limité que par votre imagination.
+
+Votre soumission (les images/films et la méthode) seront publiés sous <a
+rel="license" href="http://creativecommons.org/licenses/by/4.0">une licence internationale Creative Commons Attribution 4.0</a>.
