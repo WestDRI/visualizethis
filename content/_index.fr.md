@@ -16,7 +16,7 @@ Hébergée par [l´Alliance de recherche numérique du Canada](https://alliancec
 *Visualisez ça !* est une opportunité de tester votre créativité, d´expérimenter avec des outils de pointe et de contribuer au développent de la visualisation de données au Canada.
 
 <font color="#439596"> Cette année, vous avez le choix entre deux jeux de données géospatiales : une simulation numérique et un jeu de données empiriques. </font>
-Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir le formulaire">}} — vous serez automatiquement ajouté au groupe Google « Visualise ça 2023 » où toutes les informations nécessaires seront postées.
+Pour participer à la compétition, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir ce formulaire">}} — vous serez automatiquement ajouté au groupe Google « Visualise ça 2023 » où toutes les informations nécessaires seront postées.
 
 <!-- *Dans le concours de cette année, vous pouvez travailler sur l'un des deux ensembles de données.* -->
 
