@@ -33,8 +33,7 @@ something new!
 1. Show the importance of variance, and also the importance of **not** assuming that it is constant over time
    and space. How stochastic (unpredictable) are the ecosystems?
 1. In a 3D visualization it would be interesting to see the relationship between both NDVI variables and
-   elevation. One could easily plot, e.g. the mean NDVI vs. elevation, e.g. as a scatter plot, but it would be
-   interesting to display this relationship in real space.
+   elevation. For instance, one could easily create a scatter plot of the mean NDVI vs. the elevation, but it would be more interesting to display this relationship in real space.
 1. Animations and perhaps interactive visualizations. We would also welcome more artistic submissions, e.g. a
    flyover above BC.
 
