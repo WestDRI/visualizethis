@@ -82,7 +82,7 @@ weight = 5
 
 [languages.fr]
 languageName = "French"
-title = "Visualise ça !"
+title = "Visualisez ça !"
 [[languages.fr.menu.main]]
 identifier = "data"
 name = "Données"
