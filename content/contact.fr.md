@@ -10,4 +10,4 @@ Le concours *Visualisez ça !* 2023 est organisé par [l´Alliance de recherche 
 
 Le site web du concours est https://visualizethis.netlify.app/fr/.
 
-Toute communication sera effectuée via le [groupe Google « Visualise ça 2023 »](https://groups.google.com/d/forum/visualize-this-2023). Afin de pouvoir y accéder, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir le formulaire">}}.
+Toute communication sera effectuée via le [groupe Google « Visualise ça 2023 »](https://groups.google.com/d/forum/visualize-this-2023). Afin de pouvoir y accéder, {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "veuillez remplir ce formulaire">}}.
