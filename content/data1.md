@@ -33,9 +33,9 @@ can be treated as elevation. All variables are stored in compressed NetCDF files
 
 The storm atmospheric data are presented with the following three 3D time-dependent variables:
 
-1. the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon),
-2. the mass mixing ratio of rain MPQR(time,pres,rlat,rlon), and
-3. the mass mixing ratio of ice QTI1(time,pres,rlat,rlon)
+1. the mass mixing ratio of cloud `MPQC(time,pres,rlat,rlon)`,
+2. the mass mixing ratio of rain `MPQR(time,pres,rlat,rlon)`, and
+3. the mass mixing ratio of ice `QTI1(time,pres,rlat,rlon)`
 
 inside three files `dp2015090100_2019{1031,1101,1102}d.nc` for Oct-31, Nov-01, and Nov-02, respectively. Each
 NetCDF file contains 24 hourly steps.
@@ -48,8 +48,8 @@ The effect of the storm at the surface is described by two 2D time-dependent var
 
 Finally, the topography is provided by the following 2D static (no time dependency) variables:
 
-6. land-sea mask MG(rlat,rlon) inside `pm2015090100_00000000p.nc`,
-7. elevation ME(rlat,rlon) (in meters) inside `dm2015090100_00000000p.nc`.
+6. land-sea mask `MG(rlat,rlon)` inside `pm2015090100_00000000p.nc`,
+7. elevation `ME(rlat,rlon)` (in meters) inside `dm2015090100_00000000p.nc`.
 
 You can combine the last two variables into a single variable `elevation = MG*ME` with the Calculator Filter
 in ParaView.
@@ -115,7 +115,7 @@ To learn more about ParaView's Programmable Filter, watch
 
 ### Loading the data in Python
 
-In Python you can read data into an xarray.Dataset containing multiple variables, each stored as a NumPy
+In Python you can read data into an `xarray.Dataset` containing multiple variables, each stored as a NumPy
 array:
 
 ```py
