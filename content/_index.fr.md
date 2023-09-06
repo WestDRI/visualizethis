@@ -48,6 +48,7 @@ Le deuxième jeu de données a été fourni par le groupe de recherche de {{<a
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 2 :</b> Evolution de l´IVDN au cours du temps en CB. </font> </p>
 <br>
 
+Pour plus d´informations sur ce jeu de données, veuillez cliquer [ici](/data/ndvi/). Ce jeu de données est plus simple que le premier vu qu´il ne contient en réalité que des données en 2D (que vous pouvez visualiser en 3D si vous voulez).
 
 # Conditions du concours
 
