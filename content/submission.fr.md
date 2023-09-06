@@ -17,7 +17,7 @@ Veuillez lire [les conditions du concours](/#conditions-du-concours) avant de no
 
 # Soumission
 
-Nous publierons les instructions ici et dans le groupe Google du concours à l´automne.
+Nous publierons les instructions ici et dans le groupe Google du concours à l'automne.
 
 # Prix
 
@@ -26,5 +26,5 @@ Les meilleures soumissions seront publiées dans ce site web. Les trois gagnants
 # Juges
 
 - Alex Razoumov, Research Solutions Lead, Research Computing, Université de Simon Fraser
-- Jarno van der Kolk, Senior Scientific Computing Specialist, Université d´Ottawa
+- Jarno van der Kolk, Senior Scientific Computing Specialist, Université d'Ottawa
 - Angus Creech, Technical Solutions Specialist, Memorial Université et Professeur Adjoint, Dalhousie Université
