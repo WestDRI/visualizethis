@@ -21,10 +21,8 @@ We will publish the instructions here and in the Contest's Google Group in the f
 
 # Awards
 
-<!-- As the whole competition runs online this year, there will be no physical prizes. -->
-
-We will send certificates to the top three submissions and publish top submissions on this
-website. Winning participants will also be invited to present in our webinar series in January 2024.
+Best submissions will be published on this website. The top three participants will receive certificates and
+will be invited to present in our webinar series in January 2024.
 
 # Judges
 
