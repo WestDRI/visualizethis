@@ -91,7 +91,7 @@ right subset of input variables.
 
 Since all variables are on a spherical mesh, you might want to use non-default *vertical scale* and *vertical
 bias* when loading data. Alternatively, you can project any spherical variable to a Cartesian mesh using the
-Programmable Filter with *Output Type = vtkImageData*, e.g.
+Programmable Filter with `Output Type = vtkImageData`, e.g.
 
 ```py
 ext = inputs[0].GetExtent()
@@ -110,7 +110,7 @@ output.GetPointData().SetScalars(vtk_data_array)
 ```
 
 To learn more about ParaView's Programmable Filter, watch
-{{<a "https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
+{{<a "https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar.">}}
 
 
 ### Loading the data in Python
