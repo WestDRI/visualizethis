@@ -133,7 +133,7 @@ Data will be published here in mid-September.
 
 ### Loading the data in ParaView
 
-Each data format can be easily loaded into ParaView. When loading from CSV, you have to pass points through
+Each data format can be loaded easily into ParaView. When loading from CSV, you have to pass points through
 the Table To Points filter.
 
 Please note that when you load points, you will normally not see them (they are infinitely small points!), but
@@ -144,7 +144,7 @@ you can render data by:
 - triangulating or projecting data onto a mesh (uniform or not).
 
 You can easily manipulate data inside ParaView with the Programmable Filter. To give you an example, assuming
-you have read data from the compressed CSV format, a new filter with *Output Type = Same as Input* and the
+you have read data from the compressed CSV format, a new filter with `Output Type = Same as Input` and the
 following Python code inside the filter
 
 ```py
@@ -168,7 +168,7 @@ output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
 
 will create a new set of points that are mapped into the 3D space using their *longitude*, *latitude*, and
 *elevation*. To learn more about ParaView's Programmable Filter, watch {{<a
-"https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar">}}.
+"https://training.westdri.ca/tools/visualization/#programmable" "our January 2021 webinar.">}}
 
 
 
