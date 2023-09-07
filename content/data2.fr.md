@@ -84,7 +84,7 @@ Ceci va créer un nouveau jeu de points dans un espace en 3D à partir de leur *
 
 ### NDVI colour map
 
-Si vous le souhaitez, vous pouvez utiliser [la carte des couleurs IVDN blue-marron-vert](../../ndvi.json.gz) qui va des valeurs $-1$ à $+1$.
+Si vous le souhaitez, vous pouvez utiliser [la carte des couleurs IVDN blue-marron-vert](../../../ndvi.json.gz) qui va des valeurs $-1$ à $+1$.
 
 ### Charger les données avec Python
 

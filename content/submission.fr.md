@@ -6,7 +6,7 @@ aliases: ["about-fr","contact"]
 author: "SFU"
 ---
 
-Veuillez lire [les conditions du concours](/#conditions-du-concours) avant de nous envoyer votre travail.
+Veuillez lire [les conditions du concours](/fr/#conditions-du-concours) avant de nous envoyer votre travail.
 
 # Dates
 

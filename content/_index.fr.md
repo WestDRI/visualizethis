@@ -36,7 +36,7 @@ distributions verticales des trois variables.
 <iframe width="756" height="477" src="https://www.youtube.com/embed/3fpc2fFaLP4?rel=0" title="Simulation d'une tempête sur l'est du Canada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 1 :</b> Répartition des nuages ​​(en blancs), de la pluie (de vert à turquoise) et des cristaux de glace (en jaune) pendant 6 jours, à partir de la tempête du 31 octobre 2019.</font> </p>
 
-Pour plus d'informations sur ce jeu de données, veuillez cliquer [ici](/data/storm/). Le défi est de montrer les distributions de plusieurs variables qui se chevauchent en 3D, idéalement (mais pas nécessairement !) dans la même visualisation.
+Pour plus d'informations sur ce jeu de données, veuillez cliquer [ici](/fr/data/storm/). Le défi est de montrer les distributions de plusieurs variables qui se chevauchent en 3D, idéalement (mais pas nécessairement !) dans la même visualisation.
 
 # Jeu de données n°2 : indice de végétation par différence normalisée (IVDN)
 
@@ -48,7 +48,7 @@ Le deuxième jeu de données a été fourni par le groupe de recherche de {{<a
 <p style="line-height: 1.2;"> <font size="3"> <b>Figure 2 :</b> Evolution de l'IVDN au cours du temps en CB. </font> </p>
 <br>
 
-Pour plus d'informations sur ce jeu de données, veuillez cliquer [ici](/data/ndvi/). Ce jeu de données est plus simple que le premier vu qu'il ne contient en réalité que des données en 2D (que vous pouvez visualiser en 3D si vous voulez).
+Pour plus d'informations sur ce jeu de données, veuillez cliquer [ici](/fr/data/ndvi/). Ce jeu de données est plus simple que le premier vu qu'il ne contient en réalité que des données en 2D (que vous pouvez visualiser en 3D si vous voulez).
 
 # Conditions du concours
 
