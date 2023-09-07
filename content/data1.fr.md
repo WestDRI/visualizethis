@@ -4,6 +4,7 @@ description: "Jeu de données de tempête"
 # date: "2019-02-28"
 author: "SFU"
 slug: /data/storm
+math: true
 <!-- menu: -->
 <!--   subpage: -->
 <!--     identifier: about-subpage-s -->

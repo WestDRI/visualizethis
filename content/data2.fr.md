@@ -4,6 +4,7 @@ description: "Jeu de données IVDN"
 # date: "2019-02-28"
 author: "SFU"
 slug: /data/ndvi
+math: true
 <!-- menu: -->
 <!--   subpage: -->
 <!--     identifier: about-subpage-s2 -->
@@ -23,7 +24,7 @@ slug: /data/ndvi
 
 Ce jeu de données est une compilation de données d'IVDN (indice de végétation par différence normalisée) disponibles gratuitement pour la Colombie Britannique. L'IVDN est une mesure de verdeur calculée par spectrométrie sur deux bandes (rouge et proche de l'infrarouge). Il est régulièrement utilisé pour mesurer la productivité d'un écosystème.
 
-L'IVDN est défini par le ratio \((\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})\), où \(\eta_{\rm NIR}\) et \(\eta_{\rm red}\) sont les valeurs de réflectance dans le rouge et proche de l'infrarouge respectivement. L'IVDN est toujours compris entre \(-1\) et \(+1\) et peut mettre en évidence les habitats suivantes :
+L'IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$, où $\eta_{\rm NIR}$ et $\eta_{\rm red}$ sont les valeurs de réflectance dans le rouge et proche de l'infrarouge respectivement. L'IVDN est toujours compris entre $-1$ et $+1$ et peut mettre en évidence les habitats suivantes :
 
 <br>
 
