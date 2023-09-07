@@ -21,9 +21,9 @@ slug: /data/ndvi
 <!--     weight: 10 -->
 ---
 
-Ce jeu de données est une compilation de données d´IVDN (indice de végétation par différence normalisée) disponibles gratuitement pour la Colombie Britannique. L'IVDN est une mesure de verdeur calculée par spectrométrie sur deux bandes (rouge et proche de l´infrarouge). Il est régulièrement utilisé pour mesurer la productivité d'un écosystème.
+Ce jeu de données est une compilation de données d'IVDN (indice de végétation par différence normalisée) disponibles gratuitement pour la Colombie Britannique. L'IVDN est une mesure de verdeur calculée par spectrométrie sur deux bandes (rouge et proche de l'infrarouge). Il est régulièrement utilisé pour mesurer la productivité d'un écosystème.
 
-L´IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$, où $\eta_{\rm NIR}$ et $\eta_{\rm red}$ sont les valeurs de réflectance dans le rouge et proche de l´infrarouge respectivement. L´IVDN est toujours compris entre $-1$ et $+1$ et peut mettre en évidence les habitats suivantes :
+L'IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$, où $\eta_{\rm NIR}$ et $\eta_{\rm red}$ sont les valeurs de réflectance dans le rouge et proche de l'infrarouge respectivement. L'IVDN est toujours compris entre $-1$ et $+1$ et peut mettre en évidence les habitats suivantes :
 
 <br>
 
@@ -34,12 +34,12 @@ L´IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NI
 | Végétation éparse (arbustes et prairie) | plus brillant dans le NIR | 0.2 -- 0.3 |
 | Terre sèche dépourvue de végétation | réflectance presque égale dans le rouge et le NIR | 0 -- 0.1 |
 | Neige, glaciers, nuages | réflectance faible dans le rouge et encore plus faible dans le NIR | -0.5 -- 0 |
-| Masse d´eau | réflectance faible dans le rouge et presque nulle dans le NIR | proche de -1 |
+| Masse d'eau | réflectance faible dans le rouge et presque nulle dans le NIR | proche de -1 |
 
 <br>
 
-Pour plus d´information sur l´IVDN, voir 
-[Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) et l´article [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
+Pour plus d'information sur l'IVDN, voir 
+[Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) et l'article [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
 
 <!-- ### Description des données -->
 
@@ -59,7 +59,7 @@ Veuillez noter que vous ne verrez pas les points après les avoir lus car ils so
 - en utilisant des Glyphes, ou
 - en triangulant ou en projetant les données sur une maille (uniforme ou pas).
 
-Vous pouvez facilement manipuler les données à l´intérieur de ParaView avec le filtre programmable. Par exemple, après avoir lu les données à partir du format CSV compressé, vous pouvez utiliser un nouveau filtre avec `Output Type = Same as Input` et le code Python suivant à l´intérieur du filtre :
+Vous pouvez facilement manipuler les données à l'intérieur de ParaView avec le filtre programmable. Par exemple, après avoir lu les données à partir du format CSV compressé, vous pouvez utiliser un nouveau filtre avec `Output Type = Same as Input` et le code Python suivant à l'intérieur du filtre :
 
 ```py
 import numpy as np
@@ -88,7 +88,7 @@ Si vous le souhaitez, vous pouvez utiliser [la carte des couleurs IVDN blue-marr
 
 ### Charger les données avec Python
 
-Pour lire des fichiers VTK avec Python, vous pouvez utiliser [la librairie officielle VTK](https://pypi.org/project/vtk) ou d´autres librairies comme par exemple [meshio](https://github.com/nschloe/meshio).
+Pour lire des fichiers VTK avec Python, vous pouvez utiliser [la librairie officielle VTK](https://pypi.org/project/vtk) ou d'autres librairies comme par exemple [meshio](https://github.com/nschloe/meshio).
 
 Les fichiers compressés de type CSV peuvent être lus directement avec Pandas :
 
@@ -110,4 +110,4 @@ N. Pettorelli, S. Ryan, T. Mueller, N. Bunnefeld, B. Jędrzejewska, M. Lima, K. 
 ### Remerciements
 
 Données fournies par {{<a "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} et {{<a
-"https://github.com/StefanoMezzini" "Stefano Mezzini">}} de l´Université de la Colombie-Britannique en Okanagan.
+"https://github.com/StefanoMezzini" "Stefano Mezzini">}} de l'Université de la Colombie-Britannique en Okanagan.
