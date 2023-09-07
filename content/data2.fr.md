@@ -1,6 +1,6 @@
 ---
 title: "Indice de végétation par différence normalisée (IVDN)"
-description: ""
+description: "Jeu de données IVDN"
 # date: "2019-02-28"
 author: "SFU"
 slug: /data/ndvi
@@ -21,16 +21,93 @@ slug: /data/ndvi
 <!--     weight: 10 -->
 ---
 
-La description sera ajoutée sous peu.
+Ce jeu de données est une compilation de données d´IVDN (indice de végétation par différence normalisée) disponibles gratuitement pour la Colombie Britannique. L'IVDN est une mesure de verdeur calculée par spectrométrie sur deux bandes (rouge et proche de l´infrarouge). Il est régulièrement utilisé pour mesurer la productivité d'un écosystème.
 
-### Téléchargement des données
+L´IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$, où $\eta_{\rm NIR}$ et $\eta_{\rm red}$ sont les valeurs de réflectance dans le rouge et proche de l´infrarouge respectivement. L´IVDN est toujours compris entre $-1$ et $+1$ et peut mettre en évidence les habitats suivantes :
+
+<br>
+
+| Habitat | Caractéristique | gamme IVDN |
+| ------------- | --------------- | ----------------- |
+| Canopée de forêt dense, par ex. en Amazonie | sombre dans le rouge et brillant dans le NIR | proche de +1 |
+| Végétation dense | sombre dans le rouge et brillant dans le NIR | 0.6 -- 0.8 |
+| Végétation éparse (arbustes et prairie) | plus brillant dans le NIR | 0.2 -- 0.3 |
+| Terre sèche dépourvue de végétation | réflectance presque égale dans le rouge et le NIR | 0 -- 0.1 |
+| Neige, glaciers, nuages | réflectance faible dans le rouge et encore plus faible dans le NIR | -0.5 -- 0 |
+| Masse d´eau | réflectance faible dans le rouge et presque nulle dans le NIR | proche de -1 |
+
+<br>
+
+Pour plus d´information sur l´IVDN, voir 
+[Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) et l´article [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
+
+<!-- ### Description des données -->
+
+
+
+### Télécharger les données
 
 Les données seront publiées ici à la mi-septembre.
 
-### Chargement des données dans ParaView
+### Charger les données dans ParaView
 
-### Charger les données en Python
+Tous les formats de fichiers peuvent être lus facilement par ParaView. Pour les fichiers CSV, vous devez transformer les points avec le filtre `Table To Points`.
 
-### Les références
+Veuillez noter que vous ne verrez pas les points après les avoir lus car ils sont extrêmement petits. Cependant, vous pouvez représenter les données :
+
+- en utilisant une représentation gaussienne des points, ou
+- en utilisant des Glyphes, ou
+- en triangulant ou en projetant les données sur une maille (uniforme ou pas).
+
+Vous pouvez facilement manipuler les données à l´intérieur de ParaView avec le filtre programmable. Par exemple, après avoir lu les données à partir du format CSV compressé, vous pouvez utiliser un nouveau filtre avec `Output Type = Same as Input` et le code Python suivant à l´intérieur du filtre :
+
+```py
+import numpy as np
+npoints = inputs[0].Points.shape[0]
+lon = np.radians(inputs[0].Points[:,0])
+lat = np.radians(inputs[0].Points[:,1])
+points = vtk.vtkPoints()
+radius = 6371
+for i in range(npoints):
+    r = radius + inputs[0].Points[i,2]
+    x = r * np.cos(lon[i]) * np.cos(lat[i])
+    y = r * np.sin(lon[i]) * np.cos(lat[i])
+    z = r * np.sin(lat[i])
+    points.InsertNextPoint(x,y,z)
+
+output.SetPoints(points)
+output.PointData.append(inputs[0].PointData['mu'], 'mu')
+output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
+```
+
+Ceci va créer un nouveau jeu de points dans un espace en 3D à partir de leur *longitude*, *latitude* et *élévation*. Pour plus d'information sur le filtre programmable de ParaView, vous pouvez regarder {{<a "https://training.westdri.ca/tools/visualization/#programmable" "notre webinaire de janvier 2021.">}}
+
+### NDVI colour map
+
+Si vous le souhaitez, vous pouvez utiliser [la carte des couleurs IVDN blue-marron-vert](../../ndvi.json.gz) qui va des valeurs $-1$ à $+1$.
+
+### Charger les données avec Python
+
+Pour lire des fichiers VTK avec Python, vous pouvez utiliser [la librairie officielle VTK](https://pypi.org/project/vtk) ou d´autres librairies comme par exemple [meshio](https://github.com/nschloe/meshio).
+
+Les fichiers compressés de type CSV peuvent être lus directement avec Pandas :
+
+```py
+import pandas as pd
+data = pd.read_csv('step000.csv.gz')
+print(data.shape)
+print(data.columns)
+```
+
+puis exportés vers NumPy ou xarray.
+
+### Référence
+
+N. Pettorelli, S. Ryan, T. Mueller, N. Bunnefeld, B. Jędrzejewska, M. Lima, K. Kausrud (2011):
+   [The Normalized Difference Vegetation Index (NDVI): unforeseen successes in animal ecology](http://dx.doi.org/10.3354/cr00936). Climate
+   Research **46**, 15-27.
 
 ### Remerciements
+
+Données fournies par {{<a "https://biology.ok.ubc.ca/about/contact/michael-j-noonan" "Michael Noonan">}} et {{<a
+"https://github.com/StefanoMezzini" "Stefano Mezzini">}} de l´Université de la Colombie-Britannique en Okanagan.
