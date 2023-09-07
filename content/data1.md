@@ -26,9 +26,9 @@ math: true
 <!--         time = UNLIMITED ; // (24 currently) -->
 <!--         pres = 16 ; -->
 
-We provide simulation data for three days from October 31<sup>st</sup> to November 2<sup>nd</sup>, covering
+We provide simulation data for three days from October 31<sup>st</sup> to November 2<sup>nd</sup> 2019, covering
 the storm and some of its aftereffects. The 3D volumetric data was prepared on a spherical mesh at resolution
-$1060\times 1330$ (horizontal) at 16 vertical pressure levels. For visualization purposes, the pressure levels
+$1060\times 1330$ (horizontal) at $16$ vertical pressure levels. For visualization purposes, the pressure levels
 can be treated as elevation. All variables are stored in compressed NetCDF files.
 
 The storm atmospheric data are presented with the following three 3D time-dependent variables:
@@ -42,9 +42,9 @@ NetCDF file contains 24 hourly steps.
 
 The effect of the storm at the surface is described by two 2D time-dependent variables:
 
-4. the amount of snow (in water equivalent mm) on the ground I5(time,rlat,rlon) inside
+4. the amount of snow (in water equivalent mm) on the ground `I5(time,rlat,rlon)` inside
    `pm2015090100_2019{1031,1101,1102}d.nc`,
-5. the mean sea level pressure PN(time,rlat,rlon) inside `dm2015090100_2019{1031,1101,1102}d.nc`.
+5. the mean sea level pressure `PN(time,rlat,rlon)` inside `dm2015090100_2019{1031,1101,1102}d.nc`.
 
 Finally, the topography is provided by the following 2D static (no time dependency) variables:
 
