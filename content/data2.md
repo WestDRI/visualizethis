@@ -28,7 +28,7 @@ near-infrared) and regularly used as a measure of ecosystem productivity.
 
 Formally, NDVI is defined as the ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$,
 where $\eta_{\rm NIR}$ and $\eta_{\rm red}$ are the values of the reflectance in the near-infrared and in the
-red band, respectively. NDVI always falls between -1 and +1 and can highlight the following features:
+red bands, respectively. NDVI always falls between -1 and +1 and can highlight the following features:
 
 <br>
 
