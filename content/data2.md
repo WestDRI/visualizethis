@@ -28,7 +28,7 @@ near-infrared) and regularly used as a measure of ecosystem productivity.
 
 Formally, NDVI is defined as the ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR}+\eta_{\rm red})$,
 where $\eta_{\rm NIR}$ and $\eta_{\rm red}$ are the values of the reflectance in the near-infrared and in the
-red bands, respectively. NDVI always falls between -1 and +1 and can highlight the following features:
+red bands, respectively. NDVI always falls between $-1$ and $+1$ and can highlight the following features:
 
 <br>
 
@@ -177,7 +177,7 @@ will create a new set of points that are mapped into the 3D space using their *l
 
 ### NDVI colour map
 
-If you like, you can use [the blue-to-brown-to-green NDVI colour map](../../ndvi.json.gz) covering the values from -1 to +1.
+If you like, you can use [the blue-to-brown-to-green NDVI colour map](../../ndvi.json.gz) covering the values from $-1$ to $+1$.
 
 
 
@@ -204,11 +204,11 @@ and then exported to numpy or xarray.
 
 
 
-### References
+### Reference
 
-1. N. Pettorelli, S. Ryan, T. Mueller, N. Bunnefeld, B. Jędrzejewska, M. Lima, K. Kausrud (2011):
+N. Pettorelli, S. Ryan, T. Mueller, N. Bunnefeld, B. Jędrzejewska, M. Lima, K. Kausrud (2011):
    [The Normalized Difference Vegetation Index (NDVI): unforeseen successes in animal ecology](http://dx.doi.org/10.3354/cr00936). Climate
-   Research **46**, 15-27
+   Research **46**, 15-27.
 
 
 
