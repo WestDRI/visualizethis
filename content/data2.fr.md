@@ -39,12 +39,19 @@ L'IVDN est défini par le ratio $(\eta_{\rm NIR}-\eta_{\rm red})/ (\eta_{\rm NIR
 
 <br>
 
-Pour plus d'information sur l'IVDN, voir 
-[Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) et l'article [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
+Pour plus d'information sur l'IVDN, vous pouvez consulter [la page Wikipedia](https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index) et l'article [*5 Things To Know About NDVI*](https://up42.com/blog/5-things-to-know-about-ndvi).
 
-<!-- ### Description des données -->
+### Description des données
 
+Les valeurs moyennes d´IVDN ont été calculées depuis les années 70, mais ce qui rend ce jeu de données unique est qu´il est l´un des premiers à essayer de représenter la variance d´IVDN au cours du temps et à travers l´espace. La moyenne d´IVDN et sa variance proviennent d´un MAG (modèĺe additif généralisé) à l´échelle de la Colombie Britannique sur un jeu de données de base de plusieurs GB.
 
+Le jeu de données contient 5 935 736 points et 53 intervalles de temps. Les points ne sont pas connectés (c´est à dire qu´ils ne forment pas une surface lisse. Les 53 intervalles de temps sont répartis uniformément du 1er janvier (premier intervalle) au 31 décembre (dernier intervalle) 2022.
+
+Les données sont fournies sous deux formats : VTK et CSV compressé. Chaque format contient toutes les données (vous n´avez besoin que du format de votre choix).
+
+1. Dans les fichiers VTK, chaque point est positionné dans l´espace tridimensionnel grâce à des coordonnées cartésiennes ($x$, $y$, $z$). Trois variables sont associées à chaque point : l´IVDN moyen ($\mu$), sa variance ($\sigma_2$) et l´*élévation* en km.
+
+2. Dans le format CSV compressé, chaque ligne correspond à un point de données avec *longitude*, *latitude* et *élévation* en km, deux coordonnées horizontales ($x_{\rm alb}$, $y_{\rm alb}$) dans le cône de projection à aire égale d´Albers, l´IVDN moyen ($\mu$) et sa variance ($\sigma_2$).
 
 ### Télécharger les données
 
