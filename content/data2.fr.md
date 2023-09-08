@@ -83,7 +83,7 @@ output.PointData.append(inputs[0].PointData['sigma2'], 'sigma2')
 
 Ceci va créer un nouveau jeu de points dans un espace en 3D à partir de leur *longitude*, *latitude* et *élévation*. Pour plus d'information sur le filtre programmable de ParaView, vous pouvez regarder {{<a "https://training.westdri.ca/tools/visualization/#programmable" "notre webinaire de janvier 2021.">}}
 
-### NDVI colour map
+### Carte des couleurs IVDN
 
 Si vous le souhaitez, vous pouvez utiliser [la carte des couleurs IVDN blue-marron-vert](../../../ndvi.json.gz) qui va des valeurs $-1$ à $+1$.
 
