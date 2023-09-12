@@ -123,9 +123,28 @@ depending on which data description you like best (no need to use both).
 
 ### Downloading the data
 
-Data will be published here in mid-September.
+<!-- Data will be published here in mid-September. -->
 
-<!-- ~/visualizeThis/website/hidden/current.md -->
+To start playing with this dataset, you can download only the first time step, but for a production-quality
+animation you will need all 53 time steps.
+
+#### VTK format
+
+| File   |  Size      |  MD5 checksum |
+|--------|------------|---------------|
+| [First time step](https://nextcloud.computecanada.ca/index.php/s/t6NmKEKPRDPBQCw) | 138M | df82fda21a542d64255fde9d31856051 |
+| [All 53 time steps](https://nextcloud.computecanada.ca/index.php/s/dxgzCSyCEjpTm5k) (gzipped compressed file) | 7.1G | 91d3daa7cb75dd124981c80ee3cd74b3 |
+
+#### Compressed CSV format
+
+| File   |  Size      |  MD5 checksum |
+|--------|------------|---------------|
+| [First time step](https://nextcloud.computecanada.ca/index.php/s/4qgXR43pXq2qpck) | 139M | 172176097e1c66cf415b8c22da6dbe94 |
+| [All 53 time steps](https://nextcloud.computecanada.ca/index.php/s/mkby6TdJB7bD5ji) (gzipped compressed file) | 7.1G | c7b67777bad4d2b45345db753d4e0963 |
+
+After you download the files, you can check against the provided md5 checksum to see if the download
+succeeded.
+
 
 
 

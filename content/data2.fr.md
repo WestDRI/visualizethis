@@ -55,7 +55,34 @@ Les données sont fournies sous deux formats : VTK et CSV compressé. Chaque for
 
 ### Télécharger les données
 
-Les données seront publiées ici à la mi-septembre.
+<!-- Les données seront publiées ici à la mi-septembre. -->
+
+Pour commencer à jouer avec le jeu de données, vous n'avez besoin que du premier intervalle de temps, mais
+pour une animation de qualité, vous aurez besoin des 53 intervalles de temps.
+
+#### Format VTK
+
+| File   |  Size      |  MD5 checksum |
+|--------|------------|---------------|
+| [Premier intervalle de temps](https://nextcloud.computecanada.ca/index.php/s/t6NmKEKPRDPBQCw) | 138M | df82fda21a542d64255fde9d31856051 |
+| [Tous les 53 intervalles de temps](https://nextcloud.computecanada.ca/index.php/s/dxgzCSyCEjpTm5k) (fichier compressé gzippé) | 7.1G | 91d3daa7cb75dd124981c80ee3cd74b3 |
+
+#### Format CSV compressé
+
+| File   |  Size      |  MD5 checksum |
+|--------|------------|---------------|
+| [Premier intervalle de temps](https://nextcloud.computecanada.ca/index.php/s/4qgXR43pXq2qpck) | 139M | 172176097e1c66cf415b8c22da6dbe94 |
+| [Tous les 53 intervalles de temps](https://nextcloud.computecanada.ca/index.php/s/mkby6TdJB7bD5ji) (fichier compressé gzippé) | 7.1G | c7b67777bad4d2b45345db753d4e0963 |
+
+Après avoir téléchargé les fichiers, vous pouvez vérifier que le téléchargement s'est bien passé grâce à la
+somme de contrôle md5 fournie.
+
+
+
+
+
+
+
 
 ### Charger les données dans ParaView
 

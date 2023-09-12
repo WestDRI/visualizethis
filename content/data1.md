@@ -75,9 +75,47 @@ in ParaView.
 
 ### Downloading the data
 
-Data will be published here in mid-September.
+<!-- Data will be published here in mid-September. -->
 
-<!-- ~/visualizeThis/website/hidden/current.md -->
+<!-- for f in *.nc; do -->
+<!--     echo $(echo $f; ls -l $f | awk '{print $5}'; md5 $f | awk '{print $4}') -->
+<!-- done -->
+
+You can either download individual files by following the links in the table:
+
+| File   |  Size      |  MD5 checksum |
+|--------|------------|---------------|
+| [dm2015090100_00000000p.nc](https://nextcloud.computecanada.ca/index.php/s/DpB98GLxGjsLNZt) | 5.1M | 5a4b0af90fc3129ca6dba95942061dae |
+| [dm2015090100_20191031d.nc](https://nextcloud.computecanada.ca/index.php/s/9p4nSf8EYwA7zwk) | 46M  | 2b202060bba4d8e3005bd2a95923202b |
+| [dm2015090100_20191101d.nc](https://nextcloud.computecanada.ca/index.php/s/eAysq2ctkokNDx2) | 44M  | d17dd34b2d3db207aaace49ac97a8e34 |
+| [dm2015090100_20191102d.nc](https://nextcloud.computecanada.ca/index.php/s/Pp5CtZJb2bo74Mn) | 43M  | 69c6f8fa8afb1d626b098336729dbfb9 |
+| [dp2015090100_20191031d.nc](https://nextcloud.computecanada.ca/index.php/s/WEM3JCWoMBb7BDj) | 396M | 2fd61a2cba4a1638731871ab844e8e4c |
+| [dp2015090100_20191101d.nc](https://nextcloud.computecanada.ca/index.php/s/W3ED2qHqxrCy6WJ) | 330M | d94f015edffd59bf985df223847aab98 |
+| [dp2015090100_20191102d.nc](https://nextcloud.computecanada.ca/index.php/s/QCQSfzdwbg5ofdG) | 246M | a7eb5e8b268002fb8708b00e69f65e7b |
+| [pm2015090100_00000000p.nc](https://nextcloud.computecanada.ca/index.php/s/82r5ciD9Z7Z4gpk) | 4.1M | fbc4b1e1f987b7392b14a50767489fcc |
+| [pm2015090100_20191031d.nc](https://nextcloud.computecanada.ca/index.php/s/n5cpjC4J3PeN9SC) | 23M  | 61b20877923943beedb84d2083d29b34 |
+| [pm2015090100_20191101d.nc](https://nextcloud.computecanada.ca/index.php/s/TAg7DL7HzNngtTR) | 27M  | 1ece29fade591f65a9aea4cb22c3c5fe |
+| [pm2015090100_20191102d.nc](https://nextcloud.computecanada.ca/index.php/s/9G7Pok7QTE6d3Xd) | 28M  | ca9dee21c598a76275357f4faa7ca1b1 |
+
+or you can download all files at once using the following bash commands:
+
+```
+urls=( DpB98GLxGjsLNZt 9p4nSf8EYwA7zwk eAysq2ctkokNDx2 Pp5CtZJb2bo74Mn
+       WEM3JCWoMBb7BDj W3ED2qHqxrCy6WJ QCQSfzdwbg5ofdG 82r5ciD9Z7Z4gpk
+       n5cpjC4J3PeN9SC TAg7DL7HzNngtTR 9G7Pok7QTE6d3Xd )
+names=( dm2015090100_00000000p dm2015090100_20191031d dm2015090100_20191101d dm2015090100_20191102d
+        dp2015090100_20191031d dp2015090100_20191101d dp2015090100_20191102d pm2015090100_00000000p
+        pm2015090100_20191031d pm2015090100_20191101d pm2015090100_20191102d )
+for i in $(seq 0 10); do
+    wget https://nextcloud.computecanada.ca/index.php/s/"${urls[$i]}"/download -O "${names[$i]}".nc
+done
+```
+
+After you download the files, you can check against the provided md5 checksum to see if the download
+succeeded.
+
+
+
 
 
 
