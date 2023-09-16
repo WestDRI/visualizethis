@@ -55,6 +55,10 @@ Please read our [Contest terms](/#contest-terms) before sending us your work.
 1. Your submission may be published on our website and in other communication materials, with all credits
    preserved.
 
+<u>Don't be afraid to experiment!</u> With 3D visualization I usually find the interactive data exploration
+process a lot of fun, and the more you play with the data, the more ideas you typically have. We expect that
+most participants will be absolute beginners with 3D visualization, so the idea is to learn in the process.
+
 ### Datasets
 
 You can work on one of two datasets:
@@ -62,7 +66,6 @@ You can work on one of two datasets:
   from several empirical sources
 - both are available for downloading now
 - both can be visualized on personal computers (no need for HPC)
-
 
 1. Simulation of a storm over Eastern Canada
 - more difficult, involves multiple overlapping 3D scalar fields
@@ -95,12 +98,100 @@ cyan), and ice crystals (yellow) over 6 days starting with the storm on October 
 - Mid- to late December -- review of submissions
 - Early January 2024 -- announcement of results
 
-### How to contact us
+### For more information
 
-- Contest website https://visualizethis.netlify.app
+- Contest website https://visualizethis.netlify.app (English) and https://visualizethis.netlify.app/fr (French)
 - For quick questions about the Contest, [use this form](https://forms.gle/kLo2mL5NM2FMtXoz9)
 - Join the [2023 *Visualize This!* Google group](https://groups.google.com/d/forum/visualize-this-2023); to read and
   post messages, please {{<a "https://forms.gle/hYHvzQzRAqfMEvMHA" "register your interest">}} in the Contest,
   and we will add you to the group
 
 ### Let's take a look at the data!
+
+### Dataset 1: simulation of a storm over Eastern Canada
+
+Let's load the data in Python:
+
+- len(data.time) = 24 inside each 3D file
+- (rlat, rlon) are *the coordinates in the rotated grid* used by the model
+- the geographical coordinates lon(rlat, rlon) and lat(rlat, rlon) are inside the data files
+- type(data.lon.values)
+- data.MPQR.values.shape = (24, 16, 1060, 1330)
+
+Let's check an example of a complete workflow `a14.py` in ParaView. This file is not shared with the participants.
+
+Let's create a flat topography file in ParaView:
+
+1. load the land-sea mask MG(rlat,rlon) from `pm2015090100_00000000p.nc`, selecting (rlat,rlon) variables
+2. load the topographical elevation ME(rlat,rlon) from `dm2015090100_00000000p.nc`, selecting  (rlat,rlon) variables
+3. apply Append Attributes to both
+4. apply Calculator: elevation = MG*ME
+5. apply the Programmable Filter
+Output Type = vtkImageData
+```py
+ext = inputs[0].GetExtent()
+elevation = inputs[0].PointData["elevation"]
+
+output.SetOrigin(0., 0., 0.)
+output.SetSpacing(1., 1., 3.)
+output.SetDimensions(ext[1]-ext[0]+1, ext[3]-ext[2]+1, ext[5]-ext[4]+1)
+output.SetExtent(ext)
+output.AllocateScalars(vtk.VTK_FLOAT, 1)
+
+vtk_data_array = vtk.util.numpy_support.numpy_to_vtk(elevation, deep=True, array_type=vtk.VTK_FLOAT)
+vtk_data_array.SetNumberOfComponents(1)
+vtk_data_array.SetName("elevation")
+output.GetPointData().SetScalars(vtk_data_array)
+```
+6. apply Threshold to throw away 0<elevation<0.1
+7. last object | Save Data as `topo.pvd`
+8. optionally apply Warp by Scalar coeff=0.003
+
+You can visualize everything in curved / spherical coordinates. Here is an example for a 3D array:
+
+1. load the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) from `dp2015090100_20191101d.nc`, selecting
+   (pres,rlat,rlon) variables and using `vertical scale = 1` and `vertical bias = 1e4` to force a narrow
+   radial section
+2. try Surface &nbsp;🡒&nbsp; can't see anything ...
+3. try Volume representation &nbsp;🡒&nbsp; *very, very slow* ... trying to do ray tracing in curved geometry
+3. Isosurface might work in this geometry &nbsp;🡒&nbsp; try a range on a log scale
+
+If instead you prefer to transition to a flat geometry (*much faster* in Volume representation), here is how
+you could do it with a 3D array:
+
+abc
+1. load the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) from `dp2015090100_20191101d.nc`, selecting
+   (pres,rlat,rlon) variables and using `vertical scale = 1` and `vertical bias = 1e4` to force a narrow
+   radial section
+
+
+
+
+- apply another Programmable Filter
+Output Type = vtkImageData
+```py
+ext = inputs[0].GetExtent()
+mpqr = inputs[0].PointData["MPQR"]
+
+output.SetOrigin(0., 0., 0.)
+output.SetSpacing(1., 1., 9.)
+output.SetDimensions(ext[1]-ext[0]+1, ext[3]-ext[2]+1, ext[5]-ext[4]+1)
+output.SetExtent(ext)
+output.AllocateScalars(vtk.VTK_FLOAT, 1)
+
+vtk_data_array = vtk.util.numpy_support.numpy_to_vtk(mpqr, deep=True, array_type=vtk.VTK_FLOAT)
+vtk_data_array.SetNumberOfComponents(1)
+vtk_data_array.SetName("rain")
+output.GetPointData().SetScalars(vtk_data_array)
+```
+- apply Contour at 0.0001
+- make all green
+
+
+
+
+
+
+
+<br> <br> <br> <br> <br> <br> <br>
+### Timestepping

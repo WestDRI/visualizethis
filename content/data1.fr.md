@@ -119,6 +119,10 @@ Pour plus d'information sur le filtre programmable de ParaView, vous pouvez rega
 
 Avec Python, vous pouvez créer un `xarray.Dataset` contenant plusieurs variables, chacune stockée sous la forme d'un tableau NumPy :
 
+```sh
+pip install xarray netcdf4
+```
+
 ```py
 import xarray as xr
 data = xr.open_dataset("/chemin/du/fichier/dp2015090100_20191031d.nc")

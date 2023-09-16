@@ -156,6 +156,10 @@ To learn more about ParaView's Programmable Filter, watch
 In Python you can read data into an `xarray.Dataset` containing multiple variables, each stored as a NumPy
 array:
 
+```sh
+pip install xarray netcdf4
+```
+
 ```py
 import xarray as xr
 data = xr.open_dataset("/path/to/dp2015090100_20191031d.nc")
