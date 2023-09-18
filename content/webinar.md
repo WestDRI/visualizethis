@@ -108,7 +108,7 @@ cyan), and ice crystals (yellow) over 6 days starting with the storm on October 
 
 ### Let's take a look at the data!
 
-### Dataset 1: simulation of a storm over Eastern Canada
+# Dataset 1: simulation of a storm over Eastern Canada
 
 Let's load the data in Python:
 
@@ -149,7 +149,7 @@ output.GetPointData().SetScalars(vtk_data_array)
 
 You can visualize everything in curved / spherical coordinates. Here is an example for a 3D array:
 
-1. load the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) from `dp2015090100_20191101d.nc`, selecting
+1. load the mass mixing ratio of cloud `MPQC(time,pres,rlat,rlon)` from `dp2015090100_20191101d.nc`, selecting
    (pres,rlat,rlon) variables and using `vertical scale = 1` and `vertical bias = 1e4` to force a narrow
    radial section
 2. try Surface &nbsp;🡒&nbsp; can't see anything ...
@@ -159,15 +159,9 @@ You can visualize everything in curved / spherical coordinates. Here is an examp
 If instead you prefer to transition to a flat geometry (*much faster* in Volume representation), here is how
 you could do it with a 3D array:
 
-abc
-1. load the mass mixing ratio of cloud MPQC(time,pres,rlat,rlon) from `dp2015090100_20191101d.nc`, selecting
-   (pres,rlat,rlon) variables and using `vertical scale = 1` and `vertical bias = 1e4` to force a narrow
-   radial section
-
-
-
-
-- apply another Programmable Filter
+1. load the mass mixing ratio of cloud `MPQC(time,pres,rlat,rlon)` from `dp2015090100_20191101d.nc`, selecting
+   (pres,rlat,rlon) variables; vertical scale/bias are not important here
+2. apply the Programmable Filter
 Output Type = vtkImageData
 ```py
 ext = inputs[0].GetExtent()
@@ -185,13 +179,61 @@ vtk_data_array.SetName("rain")
 output.GetPointData().SetScalars(vtk_data_array)
 ```
 - apply Contour at 0.0001
-- make all green
+- make all white
+- also show the Volume representation
 
+### Plotting all timesteps inside a single NetCDF file
 
+In the previous visualization, let's go back to Contour at 1.e-4. Also show the outline. Use "Play" button to
+play it back. How can you save this animation.
 
+<u>Traditional approach:</u>
 
+1. File | Save Animation... as PNG images
+2. use [*ffmpeg* command-line utility](https://ffmpeg.org) to merge them into a movie at let's say 10fps
 
+<u>Scripting approach:</u>
+1. File | Save State... as a Python code `animOneDay.py`
+1. You can even test it via File | Load State... to make sure everything looks good
+1. Edit this Python code:  
+    a. look for the line with `dp2015090100_20191031dnc = NetCDFReader`  
+    b. rename `dp2015090100_20191031dnc` to `data` everywhere in the script  
+    c. remove any existing `SaveScreenshot`  
+    d. add the following near the end of your script:
+```py
+time = data.TimestepValues
+print(time)
+for t in time:
+    print("processing step", t)
+    data.UpdatePipeline(t)
+    renderView1.ViewTime = t
+    SaveScreenshot('/path/to/frame%04d'%(t)+'.png', renderView1, ImageResolution=[1920, 1080])
+```
+4. Run the script:
+```sh
+pvpython animOneDay.py
+```
 
+### Challenge: visualize multiple 3D fields and their relative positions
 
-<br> <br> <br> <br> <br> <br> <br>
-### Timestepping
+- use different colour maps for different variables
+- avoid overlapping and too much data in one plot
+- use different representations for different variables
+
+# Dataset 2: NDVI over BC
+
+Presenter: play back `~/Documents/09-visualizeThisWebinar/mu_both.mp4`. This file is not shared with the
+participants.
+
+Let's load the CSV data in Python:
+
+- each row is a data point, no underlying mesh
+
+Let's load the VTK data in ParaView
+
+1. each point has three variables: elev, NDVI $\mu$ , and its variance $\sigma_2$
+1. use Point Gaussian representation with a plain circle, adjust radius
+1. colour by NDVI
+1. switch to the blue-to-brown-to-green NDVI colour map
+
+Let's load the CSV data in ParaView -- this takes a while. Pass the data through the Table To Points filter.
