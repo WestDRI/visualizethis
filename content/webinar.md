@@ -10,28 +10,27 @@ slug: /webinar
 
 <font size="+3">2023 *Visualize This!* Contest</font>
 
-
 Last Friday (Sep-15) we launched the *Visualize This!* Contest.
+
+### Who are we?
+
+We are the Alliance's {{<a "https://ccvis.netlify.app/about" "National Visualization Team">}} comprised of HPC
+analysts from the Alliance's regional partners (ACENET, Calcul Québec, Compute Ontario) and universities in
+Western Canada (SFU, Univ of Alberta, Univ of Calgary).
+- Hosted by [the Digital Research Alliance of Canada](https://alliancecan.ca) and its regional / institutional partners
 
 ### Now in its 6th year
 
 - {{<a "https://visualizethis.netlify.app" "2023:">}} Halloween storm over Eastern Canada <ins>and</ins> the
   Normalized difference vegetation index
 - {{<a "https://scivis2021.netlify.app" "2020-2021:">}} Earth's Mantle Convection
-  {{< figure src="https://ccvis.netlify.app/ieee2021.png" title="In 2020-2021 we partnered with IEEE Vis to host the international 2021 SciVis Contest" >}}
+  {{< figure src="https://ccvis.netlify.app/ieee2021.png" title="Figure 1: In 2020-2021 we partnered with IEEE Vis to host the international 2021 SciVis Contest" >}}
 - {{<a "https://scivis2021.netlify.app/2019" "2019:">}} Incompressible transitional air flow over a wind turbine
   section <ins>or</ins> bring your own data
 - {{<a "https://scivis2021.netlify.app/2018" "2018:">}} Interaction of a large protein structure with a cell's membrane
   <ins>and</ins> Linked humanities data
 - {{<a "https://scivis2021.netlify.app/2017" "2017:">}} Airflow around counter-rotating wind turbines
 - {{<a "https://scivis2021.netlify.app/2016" "2016:">}} Visualizing multiple variables in a global ocean model
-
-### Who are we?
-
-We are the Alliance's {{<a "https://ccvis.netlify.app/about" "National Visualization Team">}} composed of HPC
-analysts from the Alliance's regional partners (ACENET, Calcul Québec, Compute Ontario) and universities in
-Western Canada (SFU, Univ of Alberta, Univ of Calgary).
-- Hosted by [the Digital Research Alliance of Canada](https://alliancecan.ca) and its regional / institutional partners
 
 ### Why we host these contests
 
@@ -74,7 +73,7 @@ You can work on one of two datasets:
 
 <br>
 <iframe width="756" height="477" src="https://www.youtube.com/embed/3fpc2fFaLP4?rel=0" title="Simulation of a storm over Eastern Canada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p style="line-height: 1.2;"> <font size="3"> <b>Figure 1:</b> Distribution of clouds (white), rain (green to
+<p style="line-height: 1.2;"> <font size="3"> <b>Figure 2:</b> Distribution of clouds (white), rain (green to
 cyan), and ice crystals (yellow) over 6 days starting with the storm on October 31, 2019. </font> </p>
 <br>
 
@@ -84,7 +83,7 @@ cyan), and ice crystals (yellow) over 6 days starting with the storm on October 
 
 <br>
 <iframe width="756" height="681" src="https://www.youtube.com/embed/5hZ59mDdBnI?rel=0" title="NDVI over time in BC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p style="line-height: 1.2;"> <font size="3"> <b>Figure 2:</b> NDVI as a function of time for BC. </font> </p>
+<p style="line-height: 1.2;"> <font size="3"> <b>Figure 3:</b> NDVI as a function of time for BC. </font> </p>
 <br>
 
 ### Timeline
@@ -220,6 +219,8 @@ pvpython animOneDay.py
 - avoid overlapping and too much data in one plot
 - use different representations for different variables
 
+Check out [Tasks](../tasks).
+
 # Dataset 2: NDVI over BC
 
 Presenter: play back `~/Documents/09-visualizeThisWebinar/mu_both.mp4`. This file is not shared with the
@@ -237,3 +238,11 @@ Let's load the VTK data in ParaView
 1. switch to the blue-to-brown-to-green NDVI colour map
 
 Let's load the CSV data in ParaView -- this takes a while. Pass the data through the Table To Points filter.
+
+### Suggestions
+
+Check out [Tasks](../tasks).
+
+<!-- Please note that there are some artifacts in the data related to a model fit, e.g. if you look at *elevation*, -->
+<!-- there is one data point above 7km. You can either remove this point, or ignore it in your analysis -- it -->
+<!-- should not affect the visualization part. -->
