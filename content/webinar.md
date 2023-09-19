@@ -183,8 +183,8 @@ output.GetPointData().SetScalars(vtk_data_array)
 
 ### Plotting all timesteps inside a single NetCDF file
 
-In the previous visualization, let's go back to Contour at 1.e-4. Also show the outline. Use "Play" button to
-play it back. How can you save this animation.
+In the previous visualization, let's go back to Contour at $10^{-4}$. Also show the outline. Use "Play" button
+to play it back. How can you save this animation.
 
 <u>Traditional approach:</u>
 
