@@ -50,6 +50,12 @@ Le deuxième jeu de données a été fourni par le groupe de recherche de {{<a
 
 Pour plus d'informations sur ce jeu de données, veuillez cliquer [ici](/fr/data/ndvi/). Ce jeu de données est plus simple que le premier vu qu'il ne contient en réalité que des données en 2D (que vous pouvez visualiser en 3D si vous voulez).
 
+# Webinaire sur le concours
+
+<br>
+{{< yt MIlMQ3mcVW4 63 >}}
+<br>
+
 # Conditions du concours
 
 Veuillez n'utiliser que des outils et logiciels open source afin que tout le monde puisse reproduire vos résultats sans avoir besoin d'acheter des licences d'outils commerciaux. {{<a

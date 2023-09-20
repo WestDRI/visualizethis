@@ -70,6 +70,12 @@ the ecosystem productivity. To limit the size of the dataset, here we provide da
 You can find more about this dataset [here](/data/ndvi/). This dataset is simpler than the first one, as it
 contains effectively only 2D data (that you can choose to view in 3D).
 
+# Contest webinar
+
+<br>
+{{< yt MIlMQ3mcVW4 63 >}}
+<br>
+
 # Contest terms
 
 Please only use open-source tools and libraries in the Contest, so that anyone can reproduce your solution
