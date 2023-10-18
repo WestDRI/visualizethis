@@ -20,11 +20,10 @@ Please read [Contest terms](/#contest-terms) before sending us your work.
 <!-- We will publish the instructions here and in the Contest's Google Group in the fall. -->
 
 To submit your visualization (images and/or animations), please pack it into a ZIP or .tar.gz file (if you
-have multiple files), and upload your file to a file-sharing service such as Dropbox, or Google Drive, or
-https://transfer.sh, or [Nextcloud](https://docs.alliancecan.ca/wiki/Nextcloud) (if you have an Alliance
-account), and {{<a "https://forms.gle/js88XwQdvczW357NA" "use this form">}} to send us the link to the file.
+have multiple files) and upload your file to a file-sharing service such as Dropbox, Google Drive, https://transfer.sh, or [Nextcloud](https://docs.alliancecan.ca/wiki/Nextcloud) (if you have an Alliance
+account) and {{<a "https://forms.gle/js88XwQdvczW357NA" "use this form">}} to send us the link to the file.
 
-For video, please use either MPEG-4, or H.264, or H.265 codec, not the older AVI format. Please include the
+For videos, please use either MPEG-4, H.264, or H.265 codecs, not the older AVI format. Please include the
 description of your workflow (or any related script) so that we could reproduce your visualization on our
 side. If you want to include a text description of your submission, please add it to your ZIP or .tar.gz file
 in any format, e.g. plain text or PDF.
