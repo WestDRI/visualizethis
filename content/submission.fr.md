@@ -19,9 +19,16 @@ Veuillez lire [les conditions du concours](/fr/#conditions-du-concours) avant de
 
 <!-- Nous publierons les instructions ici et dans le groupe Google du concours à l'automne. -->
 
-Pour soumettre votre visualisation (images et/ou animations), veuillez l'emballer dans un fichier ZIP ou .tar.gz (si vous avez plusieurs fichiers) et le télécharger vers un service de partage de fichiers tel que Dropbox, Google Drive, https://transfer.sh, ou [Nextcloud](https://docs.alliancecan.ca/wiki/Nextcloud/fr) (si vous avez un compte avec l'Alliance) et {{<a "https://forms.gle/js88XwQdvczW357NA" "utilisez ce formulaire">}} pour nous envoyer le lien vers le fichier.
+Pour soumettre votre visualisation (images et/ou animations), veuillez l'emballer dans un fichier ZIP ou
+.tar.gz (si vous avez plusieurs fichiers) et le télécharger vers un service de partage de fichiers tel que
+Dropbox, Google Drive, https://transfer.sh, ou [Nextcloud](https://docs.alliancecan.ca/wiki/Nextcloud/fr) (si
+vous avez un compte avec l'Alliance) et {{<a "https://forms.gle/js88XwQdvczW357NA" "utilisez ce formulaire">}}
+pour nous envoyer le lien vers le fichier.
 
-Pour les vidéos, veuillez utiliser les codecs  MPEG-4, H.264, ou H.265 et pas le format AVI. Veuillez inclure une description de votre flux de travail (ou scripts) afin que nous puissions reproduire votre travail. Si vous souhaitez inclure une description de votre soumission, veuillez l'ajouter, par exemple en texte brute ou PDF, au fichier ZIP ou .tar.gz.
+Pour les vidéos, veuillez utiliser les codecs  MPEG-4, H.264, ou H.265 et pas le format AVI. Veuillez inclure
+une description de votre flux de travail (ou scripts) afin que nous puissions reproduire votre travail. Si
+vous souhaitez inclure une description de votre soumission, veuillez l'ajouter, par exemple en texte brute ou
+PDF, au fichier ZIP ou .tar.gz.
 
 Une fois que nous recevrons votre soumission, nous vous enverrons un email de confirmation.
 
