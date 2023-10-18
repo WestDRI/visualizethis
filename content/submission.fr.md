@@ -40,4 +40,4 @@ Les meilleures soumissions seront publiées dans ce site web. Les trois gagnants
 
 - Alex Razoumov, Research Solutions Lead, Research Computing, Université de Simon Fraser
 - Jarno van der Kolk, Senior Scientific Computing Specialist, Université d'Ottawa
-- Angus Creech, Technical Solutions Specialist, Memorial Université et Professeur Adjoint, Dalhousie Université
+<!-- - Angus Creech, Technical Solutions Specialist, Memorial Université et Professeur Adjoint, Dalhousie Université -->
