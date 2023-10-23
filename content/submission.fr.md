@@ -40,4 +40,6 @@ Les meilleures soumissions seront publiées dans ce site web. Les trois gagnants
 
 - Alex Razoumov, Research Solutions Lead, Research Computing, Université de Simon Fraser
 - Jarno van der Kolk, Senior Scientific Computing Specialist, Université d'Ottawa
+- Pier-Luc St-Onge, Analyste en Calcul Informatique de Pointe, McGill University
+
 <!-- - Angus Creech, Technical Solutions Specialist, Memorial Université et Professeur Adjoint, Dalhousie Université -->

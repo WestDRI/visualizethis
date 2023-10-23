@@ -1,4 +1,4 @@
----
+]---
 title: "Submission"
 # description: ""
 # date: "2023-06-30"
@@ -40,4 +40,6 @@ will be invited to present in our webinar series in January 2024.
 
 - Alex Razoumov, Research Solutions Lead, Research Computing, Simon Fraser University
 - Jarno van der Kolk, Senior Scientific Computing Specialist, University of Ottawa
+- Pier-Luc St-Onge, Analyste en Calcul Informatique de Pointe, McGill University
+
 <!-- - Angus Creech, Technical Solutions Specialist, Memorial University and Adjunct Professor, Dalhousie University -->
